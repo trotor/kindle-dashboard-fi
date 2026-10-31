@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Aja komento Kindlellä telnetin kautta: scripts/kindle-sh "<komento>"
+set -euo pipefail
+
+if [ $# -lt 1 ] || [ -z "$1" ]; then
+    echo "käyttö: $(basename "$0") \"<komento>\"" >&2
+    exit 2
+fi
+
+printf '%s; exit\n' "$1" | nc -w 15 192.168.0.185 23 | LC_ALL=C tr -cd '\11\12\15\40-\176'
