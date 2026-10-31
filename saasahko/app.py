@@ -17,6 +17,11 @@ from saasahko.store import DataStore
 
 log = logging.getLogger("saasahko")
 UTC = timezone.utc
+REQUEST_TIMEOUT_S = 30
+# C0 and C1 control characters -> \xNN, so a request can't forge log lines
+_CONTROL_ESCAPES = str.maketrans(
+    {c: f"\\x{c:02x}" for c in (*range(0x20), *range(0x7F, 0xA0))}
+)
 
 
 def _parse_battery(query: str) -> int | None:
@@ -35,6 +40,8 @@ def make_server(
     cfg: Config, store: DataStore, host: str = "0.0.0.0", port: int | None = None
 ) -> ThreadingHTTPServer:
     class Handler(BaseHTTPRequestHandler):
+        timeout = REQUEST_TIMEOUT_S
+
         def _send(self, status: int, ctype: str, body: bytes) -> None:
             self.send_response(status)
             self.send_header("Content-Type", ctype)
@@ -64,11 +71,11 @@ def make_server(
                 else:
                     self._send(404, "text/plain; charset=utf-8", b"not found")
             except Exception:
-                log.exception("request failed: %s", self.path)
+                log.exception("request failed: %s", self.path.translate(_CONTROL_ESCAPES))
                 self._send(500, "text/plain; charset=utf-8", b"internal error")
 
         def log_message(self, format: str, *args) -> None:
-            log.info("%s %s", self.address_string(), format % args)
+            log.info("%s %s", self.address_string(), (format % args).translate(_CONTROL_ESCAPES))
 
     return ThreadingHTTPServer((host, cfg.port if port is None else port), Handler)
 

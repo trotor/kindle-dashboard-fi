@@ -1,5 +1,7 @@
 import io
 import json
+import logging
+import socket
 import threading
 import time
 import urllib.error
@@ -112,3 +114,20 @@ def test_refresher_survives_exception():
         time.sleep(0.01)
     assert store.calls >= 3
     assert t.is_alive() and t.daemon
+
+
+def test_handler_has_timeout(served):
+    server, _, _ = served
+    assert server.RequestHandlerClass.timeout == 30
+
+
+def test_request_log_escapes_control_characters(served, caplog):
+    server, _, _ = served
+    with caplog.at_level(logging.INFO, logger="saasahko"):
+        with socket.create_connection(server.server_address, timeout=10) as s:
+            s.sendall(b"GET /a\x1b[2Jb\x7f HTTP/1.0\r\n\r\n")
+            assert s.recv(100).startswith(b"HTTP/1.0 404")
+    lines = [r.getMessage() for r in caplog.records if "GET /a" in r.getMessage()]
+    assert lines
+    assert all("\x1b" not in m and "\x7f" not in m for m in lines)
+    assert any("\\x1b[2Jb\\x7f" in m for m in lines)
