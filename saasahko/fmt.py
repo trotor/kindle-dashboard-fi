@@ -35,5 +35,9 @@ def fmt_weekday(d: date) -> str:
     return WEEKDAYS[d.weekday()]
 
 
+def fmt_date(d: date) -> str:
+    return f"{d.day}.{d.month}."
+
+
 def fmt_header(dt: datetime) -> str:
-    return f"{fmt_weekday(dt.date())} {dt.day}.{dt.month}. · {fmt_clock(dt)}"
+    return f"{fmt_weekday(dt.date())} {fmt_date(dt.date())} · {fmt_clock(dt)}"

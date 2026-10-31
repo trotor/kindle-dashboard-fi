@@ -77,10 +77,13 @@ def _draw_header(d: ImageDraw.ImageDraw, s: DashboardState) -> None:
         right = x0
 
     if s.note:
-        f = _font(30)
-        tw = d.textlength(s.note, font=f)
+        pad_x, gap = 16, 12
+        for size in (30, 28, 26, 24, 22):
+            f = _font(size)
+            tw = d.textlength(s.note, font=f)
+            if tw + 2 * (pad_x + gap) <= right - place_right:
+                break
         cx = (place_right + right) / 2
-        pad_x = 16
         d.rounded_rectangle(
             (cx - tw / 2 - pad_x, mid - 24, cx + tw / 2 + pad_x, mid + 24), radius=8, fill=BLACK
         )

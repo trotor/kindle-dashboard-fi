@@ -148,3 +148,70 @@ def test_cheapest_tomorrow_whole_day_unchanged():
     now = datetime(2026, 11, 8, 14, 30, tzinfo=HEL).astimezone(UTC)
     st = build_state(snap(slots), CFG, now, None)
     assert st.cheapest_tomorrow == {1, 2, 3}
+
+
+# --- price-update note ------------------------------------------------------
+
+def _local(*args):
+    return datetime(*args, tzinfo=HEL).astimezone(UTC)
+
+
+def test_prices_note_when_older_than_7h():
+    now = _local(2026, 11, 8, 12, 0)
+    slots = day_slots(date(2026, 11, 8))
+    s = snap(slots, pf=_local(2026, 11, 8, 4, 30), wf=now)
+    assert build_state(s, CFG, now, None).note == "hinnat päivitetty 4.30"
+    # exactly 7 h is not "older than" 7 h
+    s = snap(slots, pf=now - timedelta(hours=7), wf=now)
+    assert build_state(s, CFG, now, None).note is None
+
+
+def test_prices_note_shows_date_when_not_today():
+    now = _local(2026, 11, 8, 12, 0)
+    s = snap(day_slots(date(2026, 11, 8)), pf=_local(2026, 11, 7, 14, 5), wf=now)
+    assert build_state(s, CFG, now, None).note == "hinnat päivitetty 7.11. 14.05"
+
+
+def test_prices_note_after_15_when_tomorrow_fetch_fails():
+    now = _local(2026, 11, 8, 15, 0)
+    slots = day_slots(date(2026, 11, 8))
+    pf = _local(2026, 11, 8, 14, 5)
+    s = snap(slots, pf=pf, wf=now, err="hinnat: boom")
+    assert build_state(s, CFG, now, None).note == "hinnat päivitetty 14.05"
+
+
+def test_no_prices_note_when_tomorrow_fetch_fails_before_15():
+    now = _local(2026, 11, 8, 14, 59)
+    s = snap(day_slots(date(2026, 11, 8)), pf=_local(2026, 11, 8, 14, 5), wf=now, err="hinnat: boom")
+    assert build_state(s, CFG, now, None).note is None
+
+
+def test_no_prices_note_when_last_error_is_weather():
+    now = _local(2026, 11, 8, 16, 0)
+    s = snap(day_slots(date(2026, 11, 8)), pf=_local(2026, 11, 8, 14, 5), wf=now, err="sää: fmi down")
+    assert build_state(s, CFG, now, None).note is None
+
+
+def test_no_prices_note_when_tomorrow_present_despite_error():
+    now = _local(2026, 11, 8, 16, 0)
+    slots = day_slots(date(2026, 11, 8)) + day_slots(date(2026, 11, 9))
+    s = snap(slots, pf=_local(2026, 11, 8, 14, 5), wf=now, err="hinnat: boom")
+    assert build_state(s, CFG, now, None).note is None
+
+
+def test_prices_note_priority():
+    now = _local(2026, 11, 8, 12, 0)
+    slots = day_slots(date(2026, 11, 8))
+    old = now - timedelta(hours=8)
+    # no prices at all still wins
+    assert build_state(snap(pf=old, wf=old), CFG, now, None).note == "ei hintatietoja"
+    # stale prices win over stale or missing weather
+    assert build_state(snap(slots, pf=old, wf=old), CFG, now, None).note == "hinnat päivitetty 4.00"
+    assert build_state(snap(slots, pf=old), CFG, now, None).note == "hinnat päivitetty 4.00"
+
+
+def test_weather_note_shows_date_when_not_today():
+    now = _local(2026, 11, 8, 1, 0)
+    slots = day_slots(date(2026, 11, 8))
+    s = snap(slots, pf=now, wf=_local(2026, 11, 7, 22, 30))
+    assert build_state(s, CFG, now, None).note == "sää päivitetty 7.11. 22.30"

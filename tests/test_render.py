@@ -1,4 +1,5 @@
 import math
+from dataclasses import replace
 
 import pytest
 from PIL import Image, ImageDraw
@@ -104,3 +105,20 @@ def test_icon_draws_something(kind):
     img = Image.new("L", (100, 100), 255)
     draw_icon(ImageDraw.Draw(img), kind, (0, 0, 100, 100))
     assert sum(img.histogram()[:255]) >= 200
+
+
+def _dark_columns(img, y0, y1, x0=0, x1=1072):
+    return [x for x in range(x0, x1) if min(img.getpixel((x, y)) for y in range(y0, y1)) < 128]
+
+
+@pytest.mark.parametrize("note", ["hinnat päivitetty 31.10. 14.05", "sää päivitetty 31.10. 14.05"])
+def test_long_note_fits_between_place_and_battery(note):
+    base = sample_state(battery=12, low_battery=True)
+    plain = render(base)
+    dark = _dark_columns(plain, 21, 70)
+    place_right = max(x for x in dark if x < 400)
+    battery_left = min(x for x in dark if x > place_right)
+    noted = render(replace(base, note=note))
+    box = _dark_columns(noted, 25, 26)  # row above all header glyphs: only the note box
+    assert box
+    assert place_right < min(box) and max(box) < battery_left

@@ -1,9 +1,9 @@
-from datetime import datetime
+from datetime import date, datetime
 from zoneinfo import ZoneInfo
 
 import pytest
 
-from saasahko.fmt import fmt_clock, fmt_header, fmt_price, fmt_temp, fmt_weekday
+from saasahko.fmt import fmt_clock, fmt_date, fmt_header, fmt_price, fmt_temp, fmt_weekday
 
 
 @pytest.mark.parametrize("t,s", [(4.2,"+4°"), (-6.4,"−6°"), (-0.3,"0°"), (0.4,"0°"), (12.5,"+13°"), (-2.5,"−3°")])
@@ -18,3 +18,8 @@ def test_fmt_header():
     dt = datetime(2026,10,31,14,30, tzinfo=ZoneInfo("Europe/Helsinki"))
     assert fmt_header(dt) == "la 31.10. · 14.30"
     assert fmt_clock(dt) == "14.30" and fmt_weekday(dt.date()) == "la"
+
+
+def test_date():
+    assert fmt_date(date(2026, 10, 31)) == "31.10."
+    assert fmt_date(date(2026, 1, 5)) == "5.1."
