@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Aja komento Kindlellä telnetin kautta: scripts/kindle-sh "<komento>"
+# KINDLE_SH_WAIT = sekunteja komennon jälkeen (oletus 3), hitaille komennoille.
 set -euo pipefail
 
 if [ $# -lt 1 ] || [ -z "$1" ]; then
@@ -7,4 +8,16 @@ if [ $# -lt 1 ] || [ -z "$1" ]; then
     exit 2
 fi
 
-printf '%s; exit\n' "$1" | nc -w 15 192.168.0.185 23 | LC_ALL=C tr -cd '\11\12\15\40-\176'
+WAIT="${KINDLE_SH_WAIT:-3}"
+
+# busybox telnetd neuvottelee ensin; komento lähetetään vasta sekunnin päästä.
+{
+    sleep 1
+    printf '%s\r\n' "$1"
+    sleep "$WAIT"
+    printf 'exit\r\n'
+    sleep 1
+} | nc -w $((WAIT + 5)) 192.168.0.185 23 \
+    | LC_ALL=C tr -cd '\11\12\15\40-\176' \
+    | LC_ALL=C tr -d '\r' \
+    | { grep -vF '[root@kindle' || true; }
