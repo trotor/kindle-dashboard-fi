@@ -1,0 +1,76 @@
+"""Dashboard state: everything the renderer needs, derived from a Snapshot."""
+from __future__ import annotations
+
+from dataclasses import dataclass
+from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
+
+from saasahko.config import Config
+from saasahko.fmt import fmt_clock
+from saasahko.prices import cheapest_hours, hourly_prices, price_at
+from saasahko.store import Snapshot
+from saasahko.symbols import describe
+from saasahko.weather import DaySummary, HourForecast, current, daily_summaries, next_hours
+
+MIN_HOURS_FOR_CHEAPEST = 20
+WEATHER_STALE = timedelta(hours=2)
+
+
+@dataclass
+class DashboardState:
+    now_local: datetime
+    place: str
+    current: HourForecast | None
+    current_desc: str
+    next_hours: list[HourForecast]
+    days: list[DaySummary]
+    prices_today: list[float | None]
+    prices_tomorrow: list[float | None]
+    cheapest_today: set[int]
+    cheapest_tomorrow: set[int]
+    price_now: float | None
+    battery: int | None
+    low_battery: bool
+    note: str | None
+
+
+def _cheapest(hourly: list[float | None]) -> set[int]:
+    if sum(p is not None for p in hourly) < MIN_HOURS_FOR_CHEAPEST:
+        return set()
+    return cheapest_hours(hourly)
+
+
+def build_state(snap: Snapshot, cfg: Config, now: datetime, battery: int | None) -> DashboardState:
+    tz = ZoneInfo(cfg.timezone)
+    local = now.astimezone(tz)
+    today = local.date()
+    extra = cfg.margin_c + cfg.transfer_c
+    prices_today = hourly_prices(snap.slots, today, tz, extra)
+    prices_tomorrow = hourly_prices(snap.slots, today + timedelta(days=1), tz, extra)
+    cur = current(snap.hours, now)
+
+    if all(p is None for p in prices_today):
+        note = "ei hintatietoja"
+    elif snap.weather_fetched_at is None:
+        note = "ei säätietoja"
+    elif now - snap.weather_fetched_at > WEATHER_STALE:
+        note = f"sää päivitetty {fmt_clock(snap.weather_fetched_at.astimezone(tz))}"
+    else:
+        note = None
+
+    return DashboardState(
+        now_local=local,
+        place=cfg.place_name,
+        current=cur,
+        current_desc=describe(cur.symbol) if cur else "",
+        next_hours=next_hours(snap.hours, now),
+        days=daily_summaries(snap.hours, tz, today),
+        prices_today=prices_today,
+        prices_tomorrow=prices_tomorrow,
+        cheapest_today=_cheapest(prices_today),
+        cheapest_tomorrow=_cheapest(prices_tomorrow),
+        price_now=price_at(snap.slots, now, extra),
+        battery=battery,
+        low_battery=battery is not None and battery < cfg.low_battery_percent,
+        note=note,
+    )
