@@ -1,0 +1,9 @@
+place_name = "TOIVALA"
+lat = 62.9876
+lon = 27.7216
+port = 8088
+margin_c = 0.0       # Herrfors: 0.23
+transfer_c = 0.0     # siirtomaksu c/kWh sis. alv
+low_battery_percent = 20
+cache_dir = "cache"
+timezone = "Europe/Helsinki"
