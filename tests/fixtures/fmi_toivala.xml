@@ -1,0 +1,3759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:FeatureCollection
+  timeStamp="2026-10-31T21:29:46Z"
+  numberReturned="288"
+  numberMatched="288"
+      xmlns:wfs="http://www.opengis.net/wfs/2.0"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:BsWfs="http://xml.fmi.fi/schema/wfs/2.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd
+                        http://xml.fmi.fi/schema/wfs/2.0 https://xml.fmi.fi/schema/wfs/2.0/fmi_wfs_simplefeature.xsd"
+>
+  	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.1.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.1.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-10-31T22:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.69</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.1.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.1.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-10-31T22:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.1.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.1.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-10-31T22:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.7</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.1.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.1.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-10-31T22:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.664615</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.2.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.2.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-10-31T23:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.74</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.2.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.2.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-10-31T23:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.2.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.2.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-10-31T23:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.8</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.2.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.2.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-10-31T23:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.606055</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.3.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.3.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T00:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.79</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.3.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.3.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T00:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.3.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.3.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T00:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.3.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.3.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T00:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.544583</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.4.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.4.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T01:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.69</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.4.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.4.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T01:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.4.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.4.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T01:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.2</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.4.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.4.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T01:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.289606</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.5.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.5.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T02:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.64</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.5.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.5.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T02:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.5.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.5.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T02:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.5.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.5.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T02:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.3866</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.6.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.6.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T03:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.64</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.6.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.6.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T03:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.6.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.6.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T03:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.2</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.6.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.6.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T03:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.243898</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.7.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.7.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T04:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.61</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.7.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.7.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T04:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.7.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.7.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T04:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.5</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.7.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.7.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T04:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.010234</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.8.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.8.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T05:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.3</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.8.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.8.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T05:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.8.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.8.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T05:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.6</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.8.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.8.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T05:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>0.612062</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.9.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.9.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T06:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>NaN</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.9.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.9.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T06:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.9.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.9.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T06:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.7</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.9.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.9.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T06:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>0.208564</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.10.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.10.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T07:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.47</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.10.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.10.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T07:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.10.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.10.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T07:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.5</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.10.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.10.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T07:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>0.890827</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.11.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.11.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T08:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.59</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.11.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.11.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T08:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.11.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.11.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T08:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.5</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.11.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.11.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T08:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.027999</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.12.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.12.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T09:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.63</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.12.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.12.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T09:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.12.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.12.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T09:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.8</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.12.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.12.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T09:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>0.913821</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.13.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.13.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T10:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.66</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.13.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.13.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T10:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.13.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.13.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T10:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.9</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.13.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.13.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T10:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>0.888391</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.14.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.14.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T11:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.77</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.14.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.14.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T11:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.14.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.14.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T11:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.8</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.14.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.14.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T11:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.047427</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.15.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.15.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T12:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.89</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.15.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.15.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T12:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.15.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.15.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T12:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.6</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.15.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.15.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T12:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.265347</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.16.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.16.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T13:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.1</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.16.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.16.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T13:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.16.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.16.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T13:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.6</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.16.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.16.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T13:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.493817</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.17.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.17.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T14:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.12</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.17.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.17.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T14:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.17.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.17.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T14:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.4</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.17.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.17.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T14:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.687594</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.18.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.18.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T15:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.19</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.18.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.18.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T15:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.18.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.18.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T15:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.2</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.18.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.18.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T15:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.885691</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.19.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.19.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T16:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.25</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.19.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.19.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T16:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.19.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.19.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T16:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.1</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.19.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.19.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T16:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.014361</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.20.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.20.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T17:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.34</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.20.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.20.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T17:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.20.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.20.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T17:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.1</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.20.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.20.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T17:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.094801</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.21.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.21.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T18:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.37</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.21.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.21.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T18:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.21.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.21.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T18:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.1</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.21.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.21.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T18:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.144312</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.22.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.22.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T19:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.28</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.22.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.22.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T19:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>32.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.22.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.22.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T19:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.22.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.22.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T19:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.096166</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.23.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.23.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T20:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.38</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.23.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.23.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T20:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>32.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.23.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.23.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T20:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.9</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.23.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.23.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T20:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.240654</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.24.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.24.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T21:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.49</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.24.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.24.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T21:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>32.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.24.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.24.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T21:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.9</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.24.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.24.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T21:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.382642</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.25.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.25.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T22:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.51</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.25.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.25.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T22:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>31.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.25.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.25.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T22:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.5</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.25.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.25.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T22:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.657418</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.26.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.26.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T23:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.59</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.26.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.26.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T23:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>31.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.26.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.26.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T23:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.5</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.26.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.26.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-01T23:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.764166</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.27.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.27.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T00:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.56</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.27.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.27.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T00:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>31.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.27.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.27.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T00:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.3</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.27.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.27.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T00:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.8841</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.28.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.28.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T01:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.52</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.28.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.28.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T01:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>31.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.28.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.28.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T01:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.1</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.28.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.28.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T01:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.95945</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.29.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.29.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T02:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.67</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.29.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.29.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T02:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>31.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.29.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.29.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T02:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.1</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.29.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.29.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T02:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.121284</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.30.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.30.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T03:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.63</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.30.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.30.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T03:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.30.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.30.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T03:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.5</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.30.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.30.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T03:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.787378</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.31.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.31.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T04:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.51</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.31.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.31.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T04:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.31.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.31.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T04:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.5</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.31.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.31.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T04:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.644395</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.32.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.32.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T05:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.28</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.32.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.32.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T05:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.32.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.32.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T05:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.6</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.32.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.32.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T05:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.349946</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.33.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.33.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T06:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.51</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.33.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.33.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T06:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.33.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.33.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T06:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.5</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.33.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.33.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T06:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.553899</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.34.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.34.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T07:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.88</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.34.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.34.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T07:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.34.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.34.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T07:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.3</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.34.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.34.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T07:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.168201</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.35.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.35.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T08:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.06</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.35.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.35.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T08:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.35.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.35.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T08:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.3</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.35.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.35.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T08:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.306058</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.36.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.36.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T09:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.24</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.36.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.36.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T09:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.36.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.36.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T09:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.4</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.36.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.36.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T09:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.445577</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.37.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.37.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T10:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.14</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.37.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.37.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T10:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.37.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.37.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T10:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.5</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.37.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.37.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T10:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.272296</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.38.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.38.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T11:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.03</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.38.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.38.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T11:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.38.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.38.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T11:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.6</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.38.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.38.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T11:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.09992</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.39.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.39.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T12:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.93</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.39.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.39.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T12:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.39.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.39.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T12:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.7</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.39.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.39.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T12:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.928406</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.40.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.40.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T13:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.39</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.40.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.40.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T13:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.40.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.40.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T13:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.6</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.40.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.40.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T13:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.397862</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.41.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.41.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T14:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.86</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.41.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.41.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T14:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.41.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.41.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T14:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.5</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.41.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.41.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T14:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>0.87039</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.42.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.42.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T15:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.32</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.42.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.42.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T15:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.42.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.42.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T15:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.4</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.42.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.42.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T15:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>0.346097</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.43.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.43.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T16:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.14</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.43.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.43.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T16:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.43.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.43.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T16:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.3</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.43.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.43.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T16:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>0.217988</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.44.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.44.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T17:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.97</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.44.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.44.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T17:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.44.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.44.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T17:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.3</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.44.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.44.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T17:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>0.091676</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.45.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.45.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T18:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.8</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.45.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.45.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T18:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.45.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.45.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T18:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.2</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.45.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.45.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T18:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-0.03277</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.46.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.46.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T19:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.55</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.46.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.46.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T19:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.46.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.46.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T19:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.3</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.46.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.46.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T19:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-0.375862</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.47.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.47.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T20:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.3</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.47.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.47.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T20:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.47.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.47.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T20:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.4</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.47.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.47.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T20:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-0.718379</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.48.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.48.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T21:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.05</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.48.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.48.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T21:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.48.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.48.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T21:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.5</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.48.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.48.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T21:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-1.060369</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.49.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.49.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T22:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.83</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.49.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.49.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T22:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.49.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.49.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T22:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.6</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.49.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.49.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T22:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-1.444443</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.50.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.50.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T23:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.61</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.50.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.50.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T23:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.50.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.50.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T23:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.8</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.50.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.50.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-02T23:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-1.824127</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.51.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.51.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T00:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.4</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.51.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.51.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T00:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.51.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.51.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T00:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.51.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.51.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T00:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-2.199852</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.52.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.52.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T01:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.67</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.52.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.52.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T01:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.52.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.52.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T01:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.1</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.52.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.52.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T01:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-1.975501</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.53.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.53.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T02:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.94</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.53.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.53.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T02:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.53.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.53.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T02:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.2</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.53.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.53.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T02:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-1.748512</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.54.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.54.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T03:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.21</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.54.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.54.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T03:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.54.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.54.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T03:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.3</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.54.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.54.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T03:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-1.51899</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.55.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.55.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T04:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.31</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.55.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.55.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T04:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.55.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.55.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T04:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.7</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.55.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.55.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T04:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-1.608621</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.56.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.56.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T05:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.42</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.56.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.56.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T05:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.56.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.56.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T05:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.56.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.56.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T05:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-1.685028</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.57.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.57.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T06:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.53</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.57.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.57.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T06:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.57.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.57.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T06:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.3</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.57.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.57.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T06:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-1.749726</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.58.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.58.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T07:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.89</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.58.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.58.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T07:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.58.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.58.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T07:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.6</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.58.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.58.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T07:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-1.475502</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.59.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.59.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T08:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.25</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.59.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.59.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T08:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.59.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.59.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T08:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.8</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.59.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.59.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T08:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-1.193669</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.60.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.60.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T09:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.61</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.60.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.60.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T09:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.60.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.60.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T09:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.60.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.60.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T09:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-0.90475</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.61.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.61.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T10:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.88</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.61.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.61.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T10:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.61.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.61.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T10:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.2</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.61.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.61.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T10:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-0.662782</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.62.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.62.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T11:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.15</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.62.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.62.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T11:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.62.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.62.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T11:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.3</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.62.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.62.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T11:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-0.418636</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.63.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.63.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T12:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.42</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.63.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.63.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T12:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.63.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.63.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T12:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.5</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.63.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.63.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T12:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-0.172378</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.64.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.64.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T13:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.63</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.64.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.64.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T13:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.64.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.64.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T13:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.3</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.64.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.64.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T13:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-0.997726</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.65.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.65.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T14:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.84</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.65.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.65.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T14:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.65.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.65.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T14:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>5.1</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.65.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.65.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T14:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-1.817598</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.66.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.66.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T15:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>2.05</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.66.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.66.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T15:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.66.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.66.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T15:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.9</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.66.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.66.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T15:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-2.631772</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.67.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.67.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T16:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.46</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.67.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.67.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T16:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.67.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.67.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T16:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.5</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.67.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.67.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T16:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-3.049729</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.68.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.68.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T17:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>0.86</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.68.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.68.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T17:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.68.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.68.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T17:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>4.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.68.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.68.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T17:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-3.439952</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.69.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.69.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T18:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>0.27</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.69.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.69.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T18:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.69.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.69.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T18:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.5</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.69.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.69.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T18:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-3.797915</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.70.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.70.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T19:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-0.03</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.70.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.70.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T19:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.70.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.70.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T19:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.4</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.70.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.70.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T19:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-4.017486</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.71.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.71.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T20:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-0.33</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.71.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.71.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T20:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.71.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.71.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T20:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.2</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.71.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.71.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T20:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-4.231515</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.72.1">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.72.1" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T21:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>Temperature</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-0.63</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.72.2">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.72.2" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T21:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WeatherSymbol3</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>1.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.72.3">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.72.3" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T21:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>WindSpeedMS</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>3.0</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+	<wfs:member>
+            <BsWfs:BsWfsElement gml:id="BsWfsElement.1.72.4">
+                <BsWfs:Location>
+                    <gml:Point gml:id="BsWfsElementP.1.72.4" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4258">
+                        <gml:pos>62.98760 27.72160 </gml:pos>
+                    </gml:Point>
+                </BsWfs:Location>
+                <BsWfs:Time>2026-11-03T21:00:00Z</BsWfs:Time>
+                <BsWfs:ParameterName>FeelsLike</BsWfs:ParameterName>
+                <BsWfs:ParameterValue>-4.439646</BsWfs:ParameterValue>
+            </BsWfs:BsWfsElement>
+	</wfs:member>
+	
+
+</wfs:FeatureCollection>
