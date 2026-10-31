@@ -47,7 +47,7 @@ def _cheapest(hourly: list[float | None], first_hour: int = 0) -> set[int]:
 def _updated(what: str, at: datetime, tz: ZoneInfo, today: date) -> str:
     """'<what> päivitetty 14.05', with the date ('31.10. 14.05') when not today."""
     local = at.astimezone(tz)
-    when = fmt_clock(local) if local.date() == today else f"{fmt_date(local)} {fmt_clock(local)}"
+    when = fmt_clock(local) if local.date() == today else f"{fmt_date(local.date())} {fmt_clock(local)}"
     return f"{what} päivitetty {when}"
 
 
