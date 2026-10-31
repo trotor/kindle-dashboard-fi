@@ -1,3 +1,4 @@
+import shlex
 import subprocess
 
 import pytest
@@ -12,12 +13,26 @@ def run(call, env=None):
     return r.stdout.strip()
 
 
-@pytest.mark.parametrize("h,s", [
-    (0, "7200"), (5, "7200"), (6, "1800"), (14, "1800"), (22, "1800"), (23, "7200"),
-    ("00", "7200"), ("05", "7200"), ("06", "1800"), ("08", "1800"), ("09", "1800"),
+@pytest.mark.parametrize("h,m,s", [
+    (5, 30, "1800"), (4, 0, "7200"), (23, 0, "7200"), (5, 59, "60"), (14, 0, "1800"),
+    ("08", "09", "1800"), ("05", "08", "3120"), ("00", "00", "7200"), (6, 0, "1800"),
+    (22, 59, "1800"),
 ])
-def test_interval(h, s):
-    assert run(f"interval_for_hour {h}") == s
+def test_sleep_seconds(h, m, s):
+    assert run(f"sleep_seconds {h} {m}") == s
+
+
+@pytest.mark.parametrize("url,host", [
+    ("http://192.168.0.157:8088/kindle.png", "192.168.0.157"),
+    ("http://mac.local/x.png", "mac.local"),
+    ("https://user@mac.local:8443", "mac.local"),
+    ("192.168.0.157", ""),
+    ("ei osoite", ""),
+    ("http://", ""),
+    ("", ""),
+])
+def test_host_from_url(url, host):
+    assert run(f"host_from_url {shlex.quote(url)}") == host
 
 
 def test_build_url():

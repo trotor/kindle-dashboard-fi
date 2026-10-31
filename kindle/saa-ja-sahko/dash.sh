@@ -4,7 +4,7 @@
 . /mnt/us/saa-ja-sahko.conf
 . "$(dirname "$0")/lib.sh"
 
-HOST=192.168.0.157
+HOST=$(host_from_url "$URL")
 PIDFILE=/tmp/saa-ja-sahko.pid
 
 # Kaksoiskäynnistyksen esto: mkdir on atominen. Jos lukko on jo, ja sen
@@ -28,11 +28,20 @@ while true; do
     stop ota-update 2>/dev/null
     rm -f /mnt/us/update*.bin /mnt/us/*.bin.tmp /mnt/us/*.tmp.partial
 
+    # Wi-Fi päälle ja odotus yhteyteen (max 60 s), sitten Macin tavoitettavuus (max 20 s)
+    lipc-set-prop com.lab126.cmd wirelessEnable 1 2>/dev/null
     i=0
-    while [ "$i" -lt 20 ] && ! ping -c1 -W2 "$HOST" >/dev/null 2>&1; do
+    while [ "$i" -lt 60 ] && [ "$(lipc-get-prop com.lab126.wifid cmState 2>/dev/null)" != CONNECTED ]; do
         i=$((i + 1))
         sleep 1
     done
+    if [ -n "$HOST" ]; then
+        i=0
+        while [ "$i" -lt 20 ] && ! ping -c1 -W2 "$HOST" >/dev/null 2>&1; do
+            i=$((i + 1))
+            sleep 1
+        done
+    fi
 
     batt=$(lipc-get-prop com.lab126.powerd battLevel)
     curl -fsS -m 60 -o /tmp/dash.new.png "$(build_url "$URL" "$batt")"
@@ -46,5 +55,5 @@ while true; do
         log "fetch failed rc=$rc"
     fi
 
-    sleep "$(interval_for_hour "$(date +%H | sed 's/^0//')")"
+    sleep "$(sleep_seconds "$(date +%H)" "$(date +%M)")"
 done
