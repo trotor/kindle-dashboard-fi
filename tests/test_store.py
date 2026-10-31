@@ -1,4 +1,5 @@
 import json
+import logging
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -199,3 +200,32 @@ def test_corrupt_cache_ignored(tmp_path):
     assert s.snapshot().slots == []
     s.refresh()
     assert f.p_calls == 1
+
+
+def _write_cache(tmp_path, prices_raw):
+    cache = tmp_path / "cache"
+    cache.mkdir()
+    (cache / "prices.json").write_text(json.dumps(prices_raw))
+    (cache / "meta.json").write_text(json.dumps({"prices_fetched_at": T.isoformat(), "weather_fetched_at": None}))
+
+
+def test_empty_price_cache_ignored(tmp_path):
+    _write_cache(tmp_path, {"prices": []})
+    s, f, _ = make(tmp_path, T + timedelta(minutes=1))
+    assert s.snapshot().prices_fetched_at is None
+    s.refresh()
+    assert f.p_calls == 1
+
+
+def test_unexpected_price_cache_shape_ignored(tmp_path):
+    _write_cache(tmp_path, {"prices": [{"startDate": 5, "price": 1.0}]})  # AttributeError
+    s, f, _ = make(tmp_path, T + timedelta(minutes=1))
+    assert s.snapshot().slots == [] and s.snapshot().prices_fetched_at is None
+
+
+def test_fetch_failure_logged(tmp_path, caplog):
+    s, f, _ = make(tmp_path, T)
+    f.fail_prices = True
+    with caplog.at_level(logging.WARNING, logger="saasahko"):
+        s.refresh()
+    assert any(r.levelno == logging.WARNING and "hinnat: boom" in r.getMessage() for r in caplog.records)

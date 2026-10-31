@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import logging
 import threading
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
@@ -11,6 +12,7 @@ from saasahko.config import Config
 from saasahko.prices import PriceSlot, fetch_porssisahko, parse_porssisahko
 from saasahko.weather import HourForecast, build_fmi_url, fetch_fmi, parse_fmi
 
+log = logging.getLogger("saasahko")
 UTC = timezone.utc
 WEATHER_MAX_AGE = timedelta(minutes=30)
 PRICES_MAX_AGE = timedelta(hours=6)
@@ -66,10 +68,11 @@ class DataStore:
         try:
             slots = parse_porssisahko(json.loads((d / "prices.json").read_text()))
             at = datetime.fromisoformat(meta["prices_fetched_at"])
-        except (OSError, ValueError, KeyError, TypeError):
+        except Exception:
             pass
         else:
-            self._slots, self._src[PRICES].fetched_at = slots, at
+            if slots:
+                self._slots, self._src[PRICES].fetched_at = slots, at
         try:
             hours = parse_fmi((d / "weather.xml").read_text())
             at = datetime.fromisoformat(meta["weather_fetched_at"])
@@ -162,6 +165,7 @@ class DataStore:
 
     def _fail(self, name: str, now: datetime, err: Exception) -> None:
         msg = f"{name}: {err}"
+        log.warning("fetch failed: %s", msg)
         with self._lock:
             src = self._src[name]
             src.failed_at, src.error = now, msg
