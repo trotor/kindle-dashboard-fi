@@ -33,6 +33,8 @@ launchctl kickstart -k gui/$(id -u)/fi.ronkko.saasahko
 
 Palvelu on launchd-agentti (`deploy/fi.ronkko.saasahko.plist`), joka käynnistyy Macin mukana ja nousee itse takaisin pystyyn.
 
+Mac minin uudelleenkäynnistyksen jälkeen palvelu käynnistyy vasta kun kirjaudut sisään (FileVault on päällä). Kindle näyttää siihen asti 'yhteysvirhe'.
+
 ## Kindlen asetukset
 
 Tiedosto `/mnt/us/saa-ja-sahko.conf` Kindlellä:
@@ -47,11 +49,11 @@ FRONTLIGHT=0
 
 Muokkaa tiedostoa USB:n kautta: liitä Kindle Maciin, ja tiedosto `saa-ja-sahko.conf` on USB-levyn juuressa.
 
-Mac minin osoite on nyt 192.168.0.157. Suositus: tee Mac minille DHCP-varaus reitittimestä, niin osoite ei vaihdu. Jos osoite silti vaihtuu, päivitä se kahteen paikkaan: `URL` tiedostossa `saa-ja-sahko.conf` ja `HOST=` rivi tiedostossa `saa-ja-sahko/dash.sh` (USB-levyllä; repossa `kindle/saa-ja-sahko/dash.sh`, sieltä kopiointi `scripts/deploy-kindle.sh`).
+Mac minin osoite on nyt 192.168.0.157. Suositus: tee Mac minille DHCP-varaus reitittimestä, niin osoite ei vaihdu. Jos osoite silti vaihtuu, päivitä se vain `URL`-riville tiedostossa `saa-ja-sahko.conf`. Näyttöohjelma ja kehitysyhteys lukevat Macin osoitteen sieltä.
 
 ## Päivitykset
 
-- Päivällä (06-23) kuva päivittyy 30 minuutin välein, yöllä 2 tunnin välein.
+- Päivällä (06-23) kuva päivittyy 30 minuutin välein, yöllä 2 tunnin välein. Aamulla kuva päivittyy klo 6, vaikka edellisestä hausta ei olisi kulunut 2 tuntia.
 - Huomisen hinnat julkaistaan noin klo 14. Sitä ennen näytöllä lukee "huomisen hinnat n. klo 14".
 
 ## Vianetsintä
@@ -70,14 +72,14 @@ Kindle:
 
 - Loki on `/mnt/us/saa-ja-sahko.log`, ja se näkyy USB:llä (onnistuneet haut: `fetch ok`, epäonnistuneet: `fetch failed`).
 - Näytöllä "yhteysvirhe HH.MM" tarkoittaa, ettei Mac vastannut kello HH.MM. Tarkista Macin palvelu (`/health`) ja osoite.
-- Kehitysyhteys (väliaikaiseen vianetsintään): kopioi `kindle/documents/kehitysyhteys.sh` Kindlen `documents`-kansioon (`scripts/deploy-kindle.sh` kopioi sen mukana) ja napauta kirjastossa "Kehitysyhteys". Se avaa salaamattoman root-yhteyden (telnet) vain Mac minille, ja yhteys katoaa Kindlen uudelleenkäynnistyksessä. Näytölle tulee Kindlen IP-osoite. Komennot Kindlellä:
+- Kehitysyhteys (väliaikaiseen vianetsintään): aja `scripts/deploy-kindle.sh --dev`, joka kopioi myös `kehitysyhteys.sh`:n Kindlen `documents`-kansioon, ja napauta kirjastossa "Kehitysyhteys". Se avaa salaamattoman root-yhteyden (telnet) vain Mac minille, ja yhteys katoaa Kindlen uudelleenkäynnistyksessä. Näytölle tulee Kindlen IP-osoite. Komennot Kindlellä:
 
   ```
   KINDLE_IP=<Kindlen IP> scripts/kindle-sh "tail -20 /mnt/us/saa-ja-sahko.log"
   ```
 
-  (`KINDLE_IP`:n oletus on 192.168.0.186.) Poista `kehitysyhteys.sh` Kindlen `documents`-kansiosta, kun et enää tarvitse sitä.
-- Kopiointi Kindlelle: liitä Kindle USB:llä ja aja `scripts/deploy-kindle.sh`. Se kopioi scriptletit ja näyttöohjelman, mutta ei ylikirjoita olemassa olevaa `saa-ja-sahko.conf`-tiedostoa.
+  (`KINDLE_IP`:n oletus on 192.168.0.186.) Kun et enää tarvitse yhteyttä, aja `scripts/deploy-kindle.sh` ilman `--dev`-valitsinta: se poistaa `kehitysyhteys.sh`:n Kindleltä.
+- Kopiointi Kindlelle: liitä Kindle USB:llä ja aja `scripts/deploy-kindle.sh`. Se kopioi scriptletit (ei kehitysyhteyttä) ja näyttöohjelman, mutta ei ylikirjoita olemassa olevaa `saa-ja-sahko.conf`-tiedostoa.
 
 ## Amazonin päivitykset
 

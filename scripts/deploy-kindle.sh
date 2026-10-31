@@ -1,9 +1,19 @@
 #!/usr/bin/env bash
 # Kopioi Kindle-puolen tiedostot USB-liitettyyn Kindleen.
+# --dev: kopioi myös kehitysyhteys.sh (telnet). Ilman sitä se poistetaan Kindleltä.
 set -euo pipefail
+
+DEV=0
+for arg in "$@"; do
+    case "$arg" in
+        --dev) DEV=1 ;;
+        *) echo "käyttö: $(basename "$0") [--dev]" >&2; exit 2 ;;
+    esac
+done
 
 VOL="${KINDLE_VOLUME:-/Volumes/Kindle}"
 SRC="$(cd "$(dirname "$0")/.." && pwd)/kindle"
+DEV_SCRIPT=kehitysyhteys.sh
 
 if [ ! -d "$VOL" ]; then
     echo "virhe: Kindlea ei ole liitetty ($VOL puuttuu)" >&2
@@ -12,11 +22,20 @@ fi
 
 mkdir -p "$VOL/documents"
 shopt -s nullglob
-scripts=("$SRC"/documents/*.sh)
+scripts=()
+for f in "$SRC"/documents/*.sh; do
+    if [ "$DEV" -eq 1 ] || [ "$(basename "$f")" != "$DEV_SCRIPT" ]; then
+        scripts+=("$f")
+    fi
+done
 if [ ${#scripts[@]} -gt 0 ]; then
     cp "${scripts[@]}" "$VOL/documents/"
 else
     echo "ohitetaan: ei scriptlettejä"
+fi
+if [ "$DEV" -eq 0 ] && [ -e "$VOL/documents/$DEV_SCRIPT" ]; then
+    rm -f "$VOL/documents/$DEV_SCRIPT"
+    echo "poistettu Kindleltä: documents/$DEV_SCRIPT (kehitysyhteys)"
 fi
 
 if [ -d "$SRC/saa-ja-sahko" ]; then
