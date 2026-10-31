@@ -66,7 +66,7 @@ Pystysuunta, ylhäältä alas:
 5. **Sähkö:** otsikko "SÄHKÖ" ja hinta nyt isolla (c/kWh). Sen alla pylväskäyrä tälle päivälle ja huomiselle (48 tuntia, klo 00–24 + 00–24):
    - Pylväs = tunnin keskihinta (lähdedata on 15 minuutin jaksoina).
    - Mennyt aika vaalean harmaana, nykyhetki katkoviivana ja "nyt"-merkintä, päivänvaihto pystyviivana.
-   - Kunkin päivän 3 halvinta tuntia mustalla, muut keskiharmaalla.
+   - Kunkin päivän 3 halvinta tuntia mustalla, muut keskiharmaalla. **Tänään halvimmat valitaan vain jäljellä olevista tunneista (kuluva tunti mukaan lukien)**, koska menneet tunnit eivät auta suunnittelussa (käyttäjän päätös 2026-10-31 esikatselun jälkeen). Huomisen halvimmat valitaan koko päivästä.
    - X-akselin merkinnät: 00, 06, 12, 18, su 00, 06, 12, 18, 24 (viikonpäivän lyhenne seuraavan päivän kohdalla).
    - Jos huomisen hintoja ei vielä ole (julkaistaan noin klo 14), käyrän oikea puoli on tyhjä ja siinä lukee "huomisen hinnat n. klo 14".
 
