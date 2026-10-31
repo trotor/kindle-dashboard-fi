@@ -42,11 +42,33 @@ def value_y(v: float, top: float, bottom: float) -> int:
     return round(CHART_Y1 - (v - bottom) * (CHART_Y1 - CHART_Y0) / (top - bottom))
 
 
-def _scale(prices: list[float | None]) -> tuple[int, int]:
+AXIS_STEPS = (5, 10, 20, 50, 100, 200, 500)
+MAX_AXIS_LABELS = 8
+AXIS_MIN_TOP = 10
+
+
+def _round_out(lo: float, hi: float, step: int) -> tuple[int, int]:
+    """(top, bottom): the axis range [min(0, lo), max(10, hi)] rounded out to `step`."""
+    top = math.ceil(max(AXIS_MIN_TOP, hi) / step) * step
+    bottom = math.floor(min(0, lo) / step) * step
+    return top, bottom
+
+
+def axis_step(lo: float, hi: float) -> int:
+    """Smallest step in AXIS_STEPS giving at most MAX_AXIS_LABELS labels."""
+    for step in AXIS_STEPS:
+        top, bottom = _round_out(lo, hi, step)
+        if (top - bottom) // step + 1 <= MAX_AXIS_LABELS:
+            return step
+    return AXIS_STEPS[-1]
+
+
+def axis_bounds(prices: list[float | None]) -> tuple[int, int, int]:
+    """(top, bottom, step) of the price axis; empty data gives (10, 0, 5)."""
     vals = [p for p in prices if p is not None]
-    if not vals:
-        return 10, 0
-    return max(10, math.ceil(max(vals) / 5) * 5), min(0, math.floor(min(vals) / 5) * 5)
+    lo, hi = (min(vals), max(vals)) if vals else (0, 0)
+    step = axis_step(lo, hi)
+    return (*_round_out(lo, hi, step), step)
 
 
 def _int_label(v: int) -> str:
@@ -153,10 +175,10 @@ def _draw_price_header(d: ImageDraw.ImageDraw, s: DashboardState) -> None:
 
 def _draw_chart(d: ImageDraw.ImageDraw, s: DashboardState) -> None:
     prices = s.prices_today + s.prices_tomorrow
-    top, bottom = _scale(prices)
+    top, bottom, step = axis_bounds(prices)
     y_zero = value_y(0, top, bottom)
 
-    for v in range(bottom, top + 1, 5):
+    for v in range(bottom, top + 1, step):
         y = value_y(v, top, bottom)
         if v != 0:
             d.line((CHART_X0, y, CHART_X1, y), fill=GRID, width=1)

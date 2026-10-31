@@ -1,16 +1,16 @@
-import math
 from dataclasses import replace
 
 import pytest
 from PIL import Image, ImageDraw
 
 from saasahko.icons import draw_icon
-from saasahko.render import CHART_X0, CHART_X1, CHART_Y0, CHART_Y1, bar_x, render, value_y
+from saasahko.render import (
+    CHART_X0, CHART_X1, CHART_Y0, CHART_Y1, axis_bounds, axis_step, bar_x, render, value_y,
+)
 from tests.sample_state import PRICES_TODAY, PRICES_TOMORROW, sample_state
 
 ALL = PRICES_TODAY + PRICES_TOMORROW
-TOP = max(10, math.ceil(max(ALL) / 5) * 5)
-BOTTOM = min(0, math.floor(min(ALL) / 5) * 5)
+TOP, BOTTOM, _ = axis_bounds(ALL)
 
 
 def bar_center(i: int, price: float) -> tuple[int, int]:
@@ -56,7 +56,8 @@ def test_negative_bar_below_zero_line():
 def test_no_tomorrow_shows_text_and_no_bars():
     img = render(sample_state(prices_tomorrow=[None] * 24, cheapest_tomorrow=set()))
     x_mid = bar_x(24)[0]
-    y_zero = value_y(0, max(10, math.ceil(max(PRICES_TODAY) / 5) * 5), 0)
+    top, bottom, _ = axis_bounds(PRICES_TODAY)
+    y_zero = value_y(0, top, bottom)
     # Every drawn bar touches the zero line. The band just above it must be
     # empty: the whole right-half area can't be checked pixel-exactly, because
     # antialiased text produces arbitrary grays (including 0x88).
@@ -122,3 +123,40 @@ def test_long_note_fits_between_place_and_battery(note):
     box = _dark_columns(noted, 25, 26)  # row above all header glyphs: only the note box
     assert box
     assert place_right < min(box) and max(box) < battery_left
+
+
+@pytest.mark.parametrize("lo,hi,step", [(0, 13, 5), (0, 47, 10), (0, 230, 50), (-3, 13, 5), (-1.2, 14.9, 5)])
+def test_axis_step(lo, hi, step):
+    assert axis_step(lo, hi) == step
+
+
+@pytest.mark.parametrize("values,expected", [
+    ([2.0, 13.0], (15, 0, 5)),
+    ([2.0, 47.0], (50, 0, 10)),
+    ([2.0, 230.0], (250, 0, 50)),
+    ([-3.0, 8.0], (10, -5, 5)),
+    ([1.0, 2.0], (10, 0, 5)),
+    ([None, None], (10, 0, 5)),
+    ([], (10, 0, 5)),
+])
+def test_axis_bounds(values, expected):
+    assert axis_bounds(values) == expected
+
+
+@pytest.mark.parametrize("values", [[13.0], [47.0], [230.0], [-40.0, 230.0], [900.0], [-3.0]])
+def test_axis_has_at_most_8_labels(values):
+    top, bottom, step = axis_bounds(values)
+    assert (top - bottom) % step == 0 and (top - bottom) // step + 1 <= 8
+    assert top >= max(10, *values) and bottom <= min(0, *values)
+
+
+def test_spike_day_gridlines_use_step():
+    spike = list(PRICES_TODAY)
+    spike[18] = 230.0
+    top, bottom, step = axis_bounds(spike + PRICES_TOMORROW)
+    assert step == 50
+    img = render(sample_state(prices_today=spike))
+    x = CHART_X0 + 2  # left of the first bar, only gridlines here
+    y100 = value_y(100, top, bottom)
+    assert img.getpixel((x, y100)) != 255
+    assert img.getpixel((x, value_y(5, top, bottom))) == 255
