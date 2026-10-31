@@ -440,10 +440,12 @@ Salli tekee käänteiset nimenvaihdot. Tiedostoja ei kopioida, koska juuressa on
 
 ## Laiteselvitys
 
-(Täytetään Taskissa 7.)
+(Täytetty 2026-10-31, laite PW3 5.16.2.1.1.)
 
-- KÄYTTÖLIITTYMÄN_PYSÄYTYS:
-- KÄYTTÖLIITTYMÄN_PALAUTUS:
-- NÄYTTÖKOMENTO:
-- OTA_POLUT:
-- Etuvalo:
+- KÄYTTÖLIITTYMÄN_PYSÄYTYS: `stop framework` (upstart; `/etc/init.d/framework` ei ole olemassa). Testattu: käyttöliittymä ei piirrä näytön päälle eikä reagoi kosketukseen. `lab126_gui` ja `webreader` jäävät käyntiin – ei haittaa.
+- KÄYTTÖLIITTYMÄN_PALAUTUS: `start framework` (toimii, mutta näyttö jää sotkuiseksi kunnes sivu vaihtuu – virallinen paluutapa on uudelleenkäynnistys).
+- NÄYTTÖKOMENTO: `eips -f -g <png>` – testattu: oikein päin, koko näyttö, täysi päivitys.
+- OTA_POLUT: jailbreak on JO nimennyt ohjelmat: `/usr/bin/otaupd.bck`, `/usr/bin/otav3.bck` (alkuperäiset puuttuvat). Upstart-confit `/etc/upstart/{ota-update,otaupd,otav3}.conf`, jobit `stop/waiting`. → Task 9 supistuu tarkistukseksi.
+- Etuvalo: `lipc-get-prop com.lab126.powerd flIntensity` → 18 (luku toimii; asetus `lipc-set-prop com.lab126.powerd flIntensity N`).
+- Palomuuri: INPUT policy DROP; `iptables` v1.4.15. Kindlestä lähtevä `ping -c1 -W2 192.168.0.157` toimii (rc=0), joten `dash.sh`:n verkon odotus pingillä on ok. Akku: `lipc-get-prop com.lab126.powerd battLevel` → 93.
+- Kehitysyhteys: `scripts/kindle-sh` toimii (KINDLE_SH_WAIT pidempiin komentoihin).
