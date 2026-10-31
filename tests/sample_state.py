@@ -43,7 +43,7 @@ def sample_state(**overrides) -> DashboardState:
         ],
         prices_today=list(PRICES_TODAY),
         prices_tomorrow=list(PRICES_TOMORROW),
-        cheapest_today=cheapest_hours(PRICES_TODAY),
+        cheapest_today=cheapest_hours([p if h >= 14 else None for h, p in enumerate(PRICES_TODAY)]),
         cheapest_tomorrow=cheapest_hours(PRICES_TOMORROW),
         price_now=6.4,
         battery=80,

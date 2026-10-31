@@ -34,10 +34,12 @@ class DashboardState:
     note: str | None
 
 
-def _cheapest(hourly: list[float | None]) -> set[int]:
+def _cheapest(hourly: list[float | None], first_hour: int = 0) -> set[int]:
+    """Cheapest hours among those >= first_hour (indices kept); needs data for most of the day."""
     if sum(p is not None for p in hourly) < MIN_HOURS_FOR_CHEAPEST:
         return set()
-    return cheapest_hours(hourly)
+    remaining = [p if h >= first_hour else None for h, p in enumerate(hourly)]
+    return cheapest_hours(remaining)
 
 
 def build_state(snap: Snapshot, cfg: Config, now: datetime, battery: int | None) -> DashboardState:
@@ -67,7 +69,7 @@ def build_state(snap: Snapshot, cfg: Config, now: datetime, battery: int | None)
         days=daily_summaries(snap.hours, tz, today),
         prices_today=prices_today,
         prices_tomorrow=prices_tomorrow,
-        cheapest_today=_cheapest(prices_today),
+        cheapest_today=_cheapest(prices_today, first_hour=local.hour),
         cheapest_tomorrow=_cheapest(prices_tomorrow),
         price_now=price_at(snap.slots, now, extra),
         battery=battery,

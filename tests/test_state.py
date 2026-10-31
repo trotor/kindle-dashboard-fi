@@ -104,3 +104,47 @@ def test_low_battery_flag():
     assert build_state(s, CFG, now, 15).low_battery is True
     assert build_state(s, CFG, now, 20).low_battery is False
     assert build_state(s, CFG, now, None).low_battery is False
+
+
+def _day_with_prices(d, by_hour):
+    return [
+        PriceSlot(datetime(d.year, d.month, d.day, h, q * 15, tzinfo=HEL).astimezone(UTC), by_hour[h])
+        for h in range(24)
+        for q in range(4)
+    ]
+
+
+# cheapest overall at hours 1-3 (past at 14.30); among 14..23 the cheapest are 14, 15, 16
+BY_HOUR = [5.0, 0.5, 0.6, 0.7] + [4.0] * 10 + [1.0, 1.1, 1.2] + [3.0] * 7
+
+
+def test_cheapest_today_only_remaining_hours():
+    today = date(2026, 11, 8)
+    now = datetime(2026, 11, 8, 14, 30, tzinfo=HEL).astimezone(UTC)
+    st = build_state(snap(_day_with_prices(today, BY_HOUR)), CFG, now, None)
+    assert st.cheapest_today == {14, 15, 16}
+    assert st.cheapest_today <= set(range(14, 24))
+
+
+def test_cheapest_today_includes_current_hour():
+    today = date(2026, 11, 8)
+    by_hour = [5.0] * 24
+    by_hour[14] = 0.1
+    now = datetime(2026, 11, 8, 14, 30, tzinfo=HEL).astimezone(UTC)
+    st = build_state(snap(_day_with_prices(today, by_hour)), CFG, now, None)
+    assert 14 in st.cheapest_today
+
+
+def test_cheapest_today_late_evening_fewer_than_three():
+    today = date(2026, 11, 8)
+    now = datetime(2026, 11, 8, 22, 30, tzinfo=HEL).astimezone(UTC)
+    st = build_state(snap(_day_with_prices(today, BY_HOUR)), CFG, now, None)
+    assert st.cheapest_today == {22, 23}
+
+
+def test_cheapest_tomorrow_whole_day_unchanged():
+    today, tomorrow = date(2026, 11, 8), date(2026, 11, 9)
+    slots = day_slots(today) + _day_with_prices(tomorrow, BY_HOUR)
+    now = datetime(2026, 11, 8, 14, 30, tzinfo=HEL).astimezone(UTC)
+    st = build_state(snap(slots), CFG, now, None)
+    assert st.cheapest_tomorrow == {1, 2, 3}
