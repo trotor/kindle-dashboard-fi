@@ -9,6 +9,12 @@ if [ $# -lt 1 ] || [ -z "$1" ]; then
 fi
 
 WAIT="${KINDLE_SH_WAIT:-3}"
+KINDLE_IP="${KINDLE_IP:-192.168.0.186}"
+
+if ! nc -z -w 3 "$KINDLE_IP" 23 2>/dev/null; then
+    echo "Kindle ei vastaa osoitteessa $KINDLE_IP – tarkista IP Kindlen näytöltä (Kehitysyhteys)" >&2
+    exit 1
+fi
 
 # busybox telnetd neuvottelee ensin; komento lähetetään vasta sekunnin päästä.
 {
@@ -17,7 +23,7 @@ WAIT="${KINDLE_SH_WAIT:-3}"
     sleep "$WAIT"
     printf 'exit\r\n'
     sleep 1
-} | nc -w $((WAIT + 5)) 192.168.0.185 23 \
+} | nc -w $((WAIT + 5)) "$KINDLE_IP" 23 \
     | LC_ALL=C tr -cd '\11\12\15\40-\176' \
     | LC_ALL=C tr -d '\r' \
     | { grep -vF '[root@kindle' || true; }

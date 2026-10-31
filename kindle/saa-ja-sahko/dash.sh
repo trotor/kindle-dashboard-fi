@@ -5,9 +5,20 @@
 . "$(dirname "$0")/lib.sh"
 
 HOST=192.168.0.157
-echo $$ > /tmp/saa-ja-sahko.pid
+PIDFILE=/tmp/saa-ja-sahko.pid
+
+# Kaksoiskäynnistyksen esto: mkdir on atominen. Jos lukko on jo, ja sen
+# pitäjä elää, poistutaan. Muuten (vanhentunut lukko) jatketaan.
+if ! mkdir /tmp/saa-ja-sahko.lock 2>/dev/null; then
+    if [ -f "$PIDFILE" ] && kill -0 "$(cat "$PIDFILE")" 2>/dev/null; then
+        exit 0
+    fi
+fi
+echo $$ > "$PIDFILE"
 
 stop framework
+# Ilman tätä pillow piirtää kaatumisikkunoita. ÄLÄ KOSKAAN: stop lab126_gui (kaataa koko session).
+stop pillow 2>/dev/null
 lipc-set-prop com.lab126.powerd preventScreenSaver 1
 lipc-set-prop com.lab126.powerd flIntensity "$FRONTLIGHT"
 
