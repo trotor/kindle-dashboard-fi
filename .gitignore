@@ -1,0 +1,7 @@
+.superpowers/
+cache/
+config.toml
+.venv/
+__pycache__/
+*.png
+!tests/golden/*.png
