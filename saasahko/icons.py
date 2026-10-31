@@ -33,7 +33,7 @@ def _sun(draw: ImageDraw.ImageDraw, box: Box, lw: int) -> None:
         )
 
 
-def _moon(draw: ImageDraw.ImageDraw, box: Box, lw: int) -> None:
+def _moon(draw: ImageDraw.ImageDraw, box: Box) -> None:
     x0, y0, x1, y1 = box
     size = min(x1 - x0, y1 - y0)
     cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
@@ -81,7 +81,10 @@ def _upper_cloud(draw: ImageDraw.ImageDraw, box: Box, lw: int) -> None:
 
 def _partly(draw: ImageDraw.ImageDraw, box: Box, lw: int, night: bool) -> None:
     corner = _sub(box, 0.38, 0.0, 1.0, 0.62)
-    (_moon if night else _sun)(draw, corner, lw)
+    if night:
+        _moon(draw, corner)
+    else:
+        _sun(draw, corner, lw)
     _cloud(draw, _sub(box, 0.0, 0.38, 0.82, 0.92), lw)
 
 
@@ -92,7 +95,7 @@ def draw_icon(draw: ImageDraw.ImageDraw, kind: str, box: Box) -> None:
     if kind == "sun":
         _sun(draw, box, lw)
     elif kind == "moon":
-        _moon(draw, box, lw)
+        _moon(draw, box)
     elif kind == "partly":
         _partly(draw, box, lw, night=False)
     elif kind == "partly_night":

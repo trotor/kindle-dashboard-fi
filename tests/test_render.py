@@ -61,8 +61,13 @@ def test_no_tomorrow_shows_text_and_no_bars():
     # antialiased text produces arbitrary grays (including 0x88).
     band = img.crop((x_mid, y_zero - 4, CHART_X1 + 1, y_zero - 1))
     assert band.histogram()[255] == band.width * band.height
-    right = img.crop((x_mid, CHART_Y0, CHART_X1 + 1, CHART_Y1))
-    assert right.histogram()[0] > 100  # the "huomisen hinnat" text
+    # The "huomisen hinnat / n. klo 14" text box, centred in the right half.
+    cx, cy = (x_mid + CHART_X1) // 2, (CHART_Y0 + CHART_Y1) // 2
+    text_box = (cx - 150, cy - 50, cx + 150, cy + 50)
+    with_text = img.crop(text_box).histogram()[0]
+    with_bars = render(sample_state()).crop(text_box).histogram()[0]
+    assert with_text > 500
+    assert with_bars == 0
 
 
 def test_missing_weather_does_not_crash():
