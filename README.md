@@ -74,7 +74,7 @@ Kindle:
 
 - Loki on `/mnt/us/saa-ja-sahko.log`, ja se näkyy USB:llä (onnistuneet haut: `fetch ok`, epäonnistuneet: `fetch failed`).
 - Jos Wi-Fi ei yhdistä 30 sekunnissa, näyttöohjelma sammuttaa ja käynnistää radion, ja tarvittaessa käynnistää Wi-Fi-palvelun (`wifid`) uudelleen. Lokissa näkyy silloin `wifi ... ->` -rivejä.
-- Näytön alareunassa isolla "yhteysvirhe HH.MM" tarkoittaa, ettei Mac vastannut kello HH.MM. Tarkista Macin palvelu (`/health`) ja osoite.
+- Sähkökuvaajan yläpuolella isolla "yhteysvirhe HH.MM" tarkoittaa, ettei Mac vastannut kello HH.MM. Tarkista Macin palvelu (`/health`) ja osoite.
 - Kehitysyhteys (väliaikaiseen vianetsintään): aja `scripts/deploy-kindle.sh --dev`, joka kopioi myös `kehitysyhteys.sh`:n Kindlen `documents`-kansioon, ja napauta kirjastossa "Kehitysyhteys". Aseta `WIFI_OFF_BETWEEN=0`, muuten Wi-Fi on suurimman osan ajasta pois päältä. Se avaa salaamattoman root-yhteyden (telnet) vain Mac minille, ja yhteys katoaa Kindlen uudelleenkäynnistyksessä. Näytölle tulee Kindlen IP-osoite. Komennot Kindlellä:
 
   ```
