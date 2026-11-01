@@ -13,6 +13,7 @@ class Config:
     margin_c: float = 0.0
     transfer_c: float = 0.0
     low_battery_percent: int = 20
+    price_limit_c: float = 15.0
     cache_dir: Path = Path("cache")
     timezone: str = "Europe/Helsinki"
 

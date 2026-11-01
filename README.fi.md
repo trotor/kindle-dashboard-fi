@@ -99,6 +99,7 @@ Napauta Kindlen kirjastossa **"Sää ja sähkö"**. Kindlen oma käyttöliittym�
 | `margin_c` | Sähkönmyyjän marginaali, c/kWh (lisätään näytettyyn hintaan) |
 | `transfer_c` | Siirtomaksu, c/kWh (lisätään näytettyyn hintaan) |
 | `low_battery_percent` | Akkuvaroituksen raja (oletus 20) |
+| `price_limit_c` | Kipuraja, c/kWh (oletus 15): katkoviiva kuvaajaan, tulevien tuntien rajan ylittävä osa viivoitettuna ja kalliin jakson kellonajat kuvaajan yläreunaan. 0 = pois |
 | `port` | Palvelimen portti (oletus 8088) |
 | `cache_dir`, `timezone` | Välimuistin kansio ja aikavyöhyke |
 

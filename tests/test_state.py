@@ -222,3 +222,11 @@ def test_prices_note_after_15_when_only_tomorrows_first_hour_known():
     slots = day_slots(date(2026, 11, 8)) + day_slots(date(2026, 11, 9), hours=range(1))
     s = snap(slots, pf=_local(2026, 11, 8, 14, 5), wf=now, err="hinnat: boom")
     assert build_state(s, CFG, now, None).note == "hinnat päivitetty 14.05"
+
+
+def test_state_price_limit_from_config():
+    today = date(2026, 11, 8)
+    now = datetime(2026, 11, 8, 12, 0, tzinfo=HEL).astimezone(UTC)
+    assert build_state(snap(day_slots(today)), CFG, now, None).price_limit == 15.0
+    st = build_state(snap(day_slots(today)), Config(price_limit_c=0), now, None)
+    assert st.price_limit == 0

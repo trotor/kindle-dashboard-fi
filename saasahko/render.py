@@ -64,12 +64,45 @@ def axis_step(lo: float, hi: float) -> int:
     return AXIS_STEPS[-1]
 
 
-def axis_bounds(prices: list[float | None]) -> tuple[int, int, int]:
-    """(top, bottom, step) of the price axis; empty data gives (10, 0, 5)."""
+def axis_bounds(prices: list[float | None], headroom: float = 1.0) -> tuple[int, int, int]:
+    """(top, bottom, step) of the price axis; empty data gives (10, 0, 5).
+
+    `headroom` > 1 leaves room above the highest bar (for the expensive-hours bracket).
+    """
     vals = [p for p in prices if p is not None]
-    lo, hi = (min(vals), max(vals)) if vals else (0, 0)
+    lo, hi = (min(vals), max(vals) * headroom) if vals else (0, 0)
     step = axis_step(lo, hi)
     return (*_round_out(lo, hi, step), step)
+
+
+def expensive_runs(prices: list[float | None], first: int, limit: float) -> list[tuple[int, int]]:
+    """Half-open [a, b) runs of hours >= `first` whose price is at least `limit` (0 = off)."""
+    if limit <= 0:
+        return []
+    runs: list[tuple[int, int]] = []
+    start = None
+    for i in range(first, len(prices) + 1):
+        hot = i < len(prices) and prices[i] is not None and prices[i] >= limit
+        if hot and start is None:
+            start = i
+        elif not hot and start is not None:
+            runs.append((start, i))
+            start = None
+    return runs
+
+
+def _num(v: float) -> str:
+    return str(int(v)) if v == int(v) else fmt_price(v)
+
+
+@lru_cache(maxsize=1)
+def _hatch() -> Image.Image:
+    """Full-size diagonal stripes; expensive bar parts are cropped from this."""
+    img = Image.new("L", (W, H), WHITE)
+    d = ImageDraw.Draw(img)
+    for k in range(-H, W, 12):
+        d.line((k, H, k + H, 0), fill=BLACK, width=3)
+    return img
 
 
 def _int_label(v: int) -> str:
@@ -175,12 +208,31 @@ def _draw_price_header(d: ImageDraw.ImageDraw, s: DashboardState) -> None:
     d.text((x, base), price, font=_font(100, True), fill=BLACK, anchor="rs")
     x -= d.textlength(price, font=_font(100, True)) + 16
     d.text((x, base), "nyt", font=_font(34), fill=BLACK, anchor="rs")
+    _draw_price_summary(d, s)
 
 
-def _draw_chart(d: ImageDraw.ImageDraw, s: DashboardState) -> None:
+def _draw_price_summary(d: ImageDraw.ImageDraw, s: DashboardState) -> None:
+    """Tomorrow's average, max and min once published, otherwise today's."""
+    if day_published(s.prices_tomorrow):
+        label, day = "huomenna", s.prices_tomorrow
+    else:
+        label, day = "tänään", s.prices_today
+    vals = [p for p in day if p is not None]
+    if not vals:
+        return
+    avg = sum(vals) / len(vals)
+    d.text((M, 858), f"{label} ka {fmt_price(avg)}", font=_font(30, True), fill=BLACK, anchor="ls")
+    d.text((M, 894), f"kallein {fmt_price(max(vals))} · halvin {fmt_price(min(vals))}",
+           font=_font(28), fill=BLACK, anchor="ls")
+
+
+def _draw_chart(img: Image.Image, d: ImageDraw.ImageDraw, s: DashboardState) -> None:
     prices = s.prices_today + s.prices_tomorrow
-    top, bottom, step = axis_bounds(prices)
+    limit = s.price_limit
+    runs = expensive_runs(prices, s.now_local.hour, limit)
+    top, bottom, step = axis_bounds(prices, headroom=1.2 if runs else 1.0)
     y_zero = value_y(0, top, bottom)
+    y_limit = value_y(limit, top, bottom) if limit > 0 else None
 
     for v in range(bottom, top + 1, step):
         y = value_y(v, top, bottom)
@@ -191,7 +243,8 @@ def _draw_chart(d: ImageDraw.ImageDraw, s: DashboardState) -> None:
     for i, p in enumerate(prices):
         if p is None:
             continue
-        if i < 24 and i < s.now_local.hour:
+        past = i < 24 and i < s.now_local.hour
+        if past:
             color = PAST
         elif (i < 24 and i in s.cheapest_today) or (i >= 24 and i - 24 in s.cheapest_tomorrow):
             color = CHEAP
@@ -199,7 +252,12 @@ def _draw_chart(d: ImageDraw.ImageDraw, s: DashboardState) -> None:
             color = BAR
         x0, x1 = bar_x(i)
         y = value_y(p, top, bottom)
-        if y < y_zero:
+        if not past and y_limit is not None and p > limit and y < y_limit:
+            d.rectangle((x0, y_limit, x1, y_zero - 1), fill=color)
+            box = (x0, y, x1 + 1, y_limit + 1)
+            img.paste(_hatch().crop(box), box[:2])
+            d.rectangle((x0, y, x1, y_limit), outline=BLACK, width=3)
+        elif y < y_zero:
             d.rectangle((x0, y, x1, y_zero - 1), fill=color)
         elif y > y_zero:
             d.rectangle((x0, y_zero, x1, y), fill=color)
@@ -208,10 +266,20 @@ def _draw_chart(d: ImageDraw.ImageDraw, s: DashboardState) -> None:
     x_day = _hour_x(24)
     d.rectangle((x_day - BAR_GAP, CHART_Y0, x_day - 1, CHART_Y1), fill=BLACK)
 
+    if y_limit is not None and bottom <= limit <= top:
+        for x in range(CHART_X0, CHART_X1, 24):
+            d.line((x, y_limit, min(x + 14, CHART_X1), y_limit), fill=BLACK, width=3)
+        px_per_c = (CHART_Y1 - CHART_Y0) / (top - bottom)
+        nearest = min(abs(limit - v) for v in range(bottom, top + 1, step))
+        if nearest * px_per_c >= 28:
+            d.text((CHART_X0 - 10, y_limit), _num(limit), font=_font(26, True), fill=BLACK, anchor="rm")
+
     x_now = _hour_x(s.now_local.hour + s.now_local.minute / 60)
     for y in range(CHART_Y0, CHART_Y1, 20):
         d.line((x_now, y, x_now, min(y + 11, CHART_Y1)), fill=BLACK, width=3)
     d.text((x_now, CHART_Y0 - 6), "nyt", font=_font(28, True), fill=BLACK, anchor="ms")
+
+    _draw_runs(d, s, prices, runs, top, bottom)
 
     if not day_published(s.prices_tomorrow):
         cx, cy = (x_day + CHART_X1) / 2, (CHART_Y0 + CHART_Y1) / 2
@@ -226,6 +294,36 @@ def _draw_chart(d: ImageDraw.ImageDraw, s: DashboardState) -> None:
         d.text((_hour_x(6 * k), 1380), label, font=_font(28), fill=BLACK, anchor=anchor)
 
 
+BRACKET_Y = CHART_Y0 + 4
+
+
+def _draw_runs(d, s: DashboardState, prices, runs, top: int, bottom: int) -> None:
+    """Bracket and label over each expensive run, and the peak value above its bar."""
+    f = _font(28, True)
+    for a, b in runs:
+        xa, xb = _hour_x(a), _hour_x(b) - BAR_GAP
+        d.line((xa, BRACKET_Y + 16, xa, BRACKET_Y), fill=BLACK, width=3)
+        d.line((xa, BRACKET_Y, xb, BRACKET_Y), fill=BLACK, width=3)
+        d.line((xb, BRACKET_Y, xb, BRACKET_Y + 16), fill=BLACK, width=3)
+        ha, hb = a % 24, b if b <= 24 else b - 24
+        span = f"{ha:02d}–{hb:02d}"
+        for text in (f"klo {span} yli {_num(s.price_limit)} c", f"{span} yli {_num(s.price_limit)} c", span):
+            w = d.textlength(text, font=f)
+            if w + 2 * 24 <= xb - xa:
+                cx = (xa + xb) / 2
+                d.rectangle((cx - w / 2 - 8, BRACKET_Y - 18, cx + w / 2 + 8, BRACKET_Y + 18), fill=WHITE)
+                d.text((cx, BRACKET_Y), text, font=f, fill=BLACK, anchor="mm")
+                break
+
+    if runs:
+        k = max((i for a, b in runs for i in range(a, b)), key=lambda i: prices[i])
+        pk = prices[k]
+        y = value_y(pk, top, bottom) - 6
+        if y - 26 > BRACKET_Y + 20:
+            x0, x1 = bar_x(k)
+            d.text(((x0 + x1) / 2, y), str(math.floor(pk + 0.5)), font=_font(26, True), fill=BLACK, anchor="ms")
+
+
 def render(state: DashboardState) -> Image.Image:
     img = Image.new("L", (W, H), WHITE)
     d = ImageDraw.Draw(img)
@@ -234,5 +332,5 @@ def render(state: DashboardState) -> Image.Image:
     _draw_hours(d, state)
     _draw_days(d, state)
     _draw_price_header(d, state)
-    _draw_chart(d, state)
+    _draw_chart(img, d, state)
     return img

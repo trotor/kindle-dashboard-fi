@@ -34,6 +34,7 @@ class DashboardState:
     battery: int | None
     low_battery: bool
     note: str | None
+    price_limit: float = 0.0
 
 
 def _cheapest(hourly: list[float | None], first_hour: int = 0) -> set[int]:
@@ -99,4 +100,5 @@ def build_state(snap: Snapshot, cfg: Config, now: datetime, battery: int | None)
         battery=battery,
         low_battery=battery is not None and battery < cfg.low_battery_percent,
         note=note,
+        price_limit=cfg.price_limit_c,
     )

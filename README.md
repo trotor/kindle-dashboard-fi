@@ -101,6 +101,7 @@ Tap **"Sää ja sähkö"** in the Kindle library. The normal Kindle UI closes an
 | `margin_c` | Your retailer's margin, c/kWh (added to the displayed price) |
 | `transfer_c` | Grid transfer fee, c/kWh (added to the displayed price) |
 | `low_battery_percent` | Low-battery warning threshold (default 20) |
+| `price_limit_c` | Price limit, c/kWh (default 15): a dashed line on the chart, the part of each upcoming bar above it hatched, and the expensive stretch labelled with its hours. 0 = off |
 | `port` | Server port (default 8088) |
 | `cache_dir`, `timezone` | Cache directory and time zone |
 

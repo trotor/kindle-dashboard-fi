@@ -195,3 +195,74 @@ def test_day_wind_drawn():
     a = render(replace(state, days=calm)).crop(box)
     b = render(replace(state, days=windy)).crop(box)
     assert a.tobytes() != b.tobytes()
+
+
+# --- kipuraja / price limit -------------------------------------------------
+
+from saasahko.render import expensive_runs  # noqa: E402
+
+PRICY_TOMORROW = [3.0] * 7 + [22.0, 42.0, 45.0, 50.0, 30.0] + [8.0] * 4 + [18.0, 40.0, 25.0] + [6.0] * 5
+
+
+@pytest.mark.parametrize(
+    "prices, first, limit, runs",
+    [
+        ([1, 20, 20, 1, 20], 0, 15, [(1, 3), (4, 5)]),
+        ([20, 20, 1, 20], 1, 15, [(1, 2), (3, 4)]),   # past hours ignored
+        ([15, 14.9], 0, 15, [(0, 1)]),                 # limit itself counts
+        ([20, None, 20], 0, 15, [(0, 1), (2, 3)]),
+        ([20, 20], 0, 0, []),                          # 0 = off
+    ],
+)
+def test_expensive_runs(prices, first, limit, runs):
+    assert expensive_runs(prices, first, limit) == runs
+
+
+def _pricy(**kw):
+    return sample_state(prices_tomorrow=list(PRICY_TOMORROW), cheapest_tomorrow={0, 1, 2}, **kw)
+
+
+def _bar_top_part(img, i, price, limit, top, bottom):
+    x0, x1 = bar_x(i)
+    y0, y1 = value_y(price, top, bottom) + 4, value_y(limit, top, bottom) - 4
+    return img.crop((x0 + 4, y0, x1 - 3, y1))
+
+
+def test_expensive_part_is_hatched():
+    img = render(_pricy(price_limit=15.0))
+    top, bottom, _ = axis_bounds(PRICES_TODAY + PRICY_TOMORROW, headroom=1.2)
+    part = _bar_top_part(img, 24 + 10, 50.0, 15.0, top, bottom)
+    colors = set(part.tobytes())
+    assert 0 in colors and 255 in colors  # stripes, not a flat grey
+
+
+def test_no_hatching_when_limit_off():
+    img = render(_pricy(price_limit=0))
+    top, bottom, _ = axis_bounds(PRICES_TODAY + PRICY_TOMORROW)
+    part = _bar_top_part(img, 24 + 10, 50.0, 15.0, top, bottom)
+    assert set(part.tobytes()) == {0x88}
+
+
+def test_limit_line_and_bracket_drawn():
+    on = render(_pricy(price_limit=15.0))
+    off = render(_pricy(price_limit=0))
+    band = (CHART_X0, CHART_Y0 - 14, CHART_X1, CHART_Y0 + 24)  # bracket area
+    assert on.crop(band).tobytes() != off.crop(band).tobytes()
+    top, bottom, _ = axis_bounds(PRICES_TODAY + PRICY_TOMORROW, headroom=1.2)
+    y = value_y(15, top, bottom)
+    x0, _ = bar_x(2)  # past, low bar: the dashed line is visible above it
+    row = [on.getpixel((x, y)) for x in range(x0, x0 + 40)]
+    assert 0 in row and 255 in row
+
+
+def test_summary_shows_tomorrow_when_published():
+    box = (40, 828, 420, 904)
+    a = render(_pricy(price_limit=15.0)).crop(box)
+    b = render(sample_state(price_limit=15.0)).crop(box)
+    assert a.tobytes() != b.tobytes()
+    assert set(a.tobytes()) != {255}
+
+
+def test_summary_when_no_tomorrow_uses_today():
+    img = render(sample_state(prices_tomorrow=[None] * 24, cheapest_tomorrow=set()))
+    assert set(img.crop((40, 828, 420, 904)).tobytes()) != {255}
