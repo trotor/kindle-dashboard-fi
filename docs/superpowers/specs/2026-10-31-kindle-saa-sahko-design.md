@@ -152,3 +152,13 @@ Tämä korvaa ei-tavoitteen "Kindle palaa tavalliseksi" siltä osin, että Kindl
 - Uudelleenkäynnistyksen jälkeen Kindle on tavallinen Kindle.
 - Ennen klo 14 näkyy "huomisen hinnat n. klo 14", ja sen jälkeen huomisen käyrä.
 - Mac-palvelu käynnistyy itsestään Macin uudelleenkäynnistyksen jälkeen.
+
+## Jatkokehitys: kiinteä hinta-asteikko (valmisteltu, ei toteutettu)
+
+Käyttäjän idea 2026-11-01. Toteutetaan, kun käyttäjä niin päättää. Tarkoitus: kalliit tunnit erottuvat aina samalla tavalla. Nyt asteikko skaalautuu päivän hintojen mukaan, joten kallis päivä näyttää samalta kuin halpa. Vertailukohta: kiinteän sopimuksen hinta on noin 15 c/kWh.
+
+- `config.toml`:iin `price_axis_max_c` (oletus 0 = automaattinen asteikko kuten nyt, esim. 20 = asteikko aina 0–20 c). Negatiiviset hinnat laskevat alarajaa kuten nyt.
+- Hinta yli ylärajan: pylväs piirretään yläreunaan asti, ja yläpäähän tulee merkki (▲) ja hintaluku, esim. "34". Huomisen ja tämän päivän pylväät samalla tavalla.
+- Valinnainen `price_limit_c` (oletus 0 = ei viivaa, esim. 15): vaakasuora katkoviiva ja nimiö, kuten "15 c", tällä tasolla. Toimii myös automaattisen asteikon kanssa, jos viiva osuu asteikolle.
+- Kumpikin asetus koskee vain piirtoa: hintoihin ei lisätä mitään (siirto ja marginaali ovat omat asetuksensa).
+- Toteutuskohdat: `Config`-kentät (tyyppi float, tarkistus ≥ 0), `render.axis_bounds(prices, fixed_max=0)` (kiinteä yläraja ohittaa skaalauksen; askel valitaan kuten nyt ≤ 8 nimiöllä), leikatun pylvään merkki ja raja-viiva `render.py`:hin. Testit: `axis_bounds` kiinteällä ylärajalla, leikatun pylvään merkki pikselitestinä, viivan paikka.
