@@ -65,3 +65,19 @@ log() {
 fail_text() {
     echo "yhteysvirhe $(printf '%s' "$1" | cut -c1-2).$(printf '%s' "$1" | cut -c3-4)"
 }
+
+# wait_for N CMD... -> ajaa CMD:n sekunnin välein, kunnes se onnistuu (rc 0)
+# tai N sekuntia on kulunut (rc 1)
+wait_for() {
+    _n=$1
+    shift
+    _i=0
+    while ! "$@"; do
+        _i=$((_i + 1))
+        if [ "$_i" -gt "$_n" ]; then
+            return 1
+        fi
+        sleep 1
+    done
+    return 0
+}
