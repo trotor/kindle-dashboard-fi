@@ -160,3 +160,13 @@ def test_spike_day_gridlines_use_step():
     y100 = value_y(100, top, bottom)
     assert img.getpixel((x, y100)) != 255
     assert img.getpixel((x, value_y(5, top, bottom))) == 255
+
+
+def test_tomorrow_text_shown_when_only_first_hour_known():
+    only_first = [PRICES_TOMORROW[0]] + [None] * 23
+    x_mid = bar_x(24)[0]
+    cx, cy = (x_mid + CHART_X1) // 2, (CHART_Y0 + CHART_Y1) // 2
+    text_box = (cx - 150, cy - 50, cx + 150, cy + 50)
+    none = render(sample_state(prices_tomorrow=[None] * 24, cheapest_tomorrow=set()))
+    first = render(sample_state(prices_tomorrow=only_first, cheapest_tomorrow=set()))
+    assert first.crop(text_box).tobytes() == none.crop(text_box).tobytes()

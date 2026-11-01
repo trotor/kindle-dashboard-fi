@@ -229,3 +229,18 @@ def test_fetch_failure_logged(tmp_path, caplog):
     with caplog.at_level(logging.WARNING, logger="saasahko"):
         s.refresh()
     assert any(r.levelno == logging.WARNING and "hinnat: boom" in r.getMessage() for r in caplog.records)
+
+
+def test_afternoon_polling_continues_when_only_tomorrows_first_hour_known(tmp_path):
+    # Nord Pool's day is CET, so today's auction already covers tomorrow 00-01
+    # Finnish time. That hour alone must not count as "tomorrow published".
+    t0 = datetime(2026, 11, 1, 11, 0, tzinfo=UTC)  # 13.00 local
+    s, f, c = make(tmp_path, t0)
+    both = prices_json(datetime(2026, 11, 1).date(), datetime(2026, 11, 2).date())
+    first_hour = datetime(2026, 11, 2, 1, 0, tzinfo=HEL).astimezone(UTC).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+    f.prices = {"prices": [p for p in both["prices"] if p["startDate"] < first_hour]}
+    s.refresh()
+    assert f.p_calls == 1
+    c.t = t0 + timedelta(minutes=16)
+    s.refresh()
+    assert f.p_calls == 2

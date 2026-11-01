@@ -215,3 +215,10 @@ def test_weather_note_shows_date_when_not_today():
     slots = day_slots(date(2026, 11, 8))
     s = snap(slots, pf=now, wf=_local(2026, 11, 7, 22, 30))
     assert build_state(s, CFG, now, None).note == "sää päivitetty 7.11. 22.30"
+
+
+def test_prices_note_after_15_when_only_tomorrows_first_hour_known():
+    now = _local(2026, 11, 8, 15, 0)
+    slots = day_slots(date(2026, 11, 8)) + day_slots(date(2026, 11, 9), hours=range(1))
+    s = snap(slots, pf=_local(2026, 11, 8, 14, 5), wf=now, err="hinnat: boom")
+    assert build_state(s, CFG, now, None).note == "hinnat päivitetty 14.05"

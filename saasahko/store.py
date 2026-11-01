@@ -9,7 +9,7 @@ from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 from saasahko.config import Config
-from saasahko.prices import PriceSlot, fetch_porssisahko, parse_porssisahko
+from saasahko.prices import PUBLISHED_FROM_HOUR, PriceSlot, fetch_porssisahko, parse_porssisahko
 from saasahko.weather import HourForecast, build_fmi_url, fetch_fmi, parse_fmi
 
 log = logging.getLogger("saasahko")
@@ -101,7 +101,10 @@ class DataStore:
 
     def _tomorrow_present(self, now: datetime) -> bool:
         tomorrow = now.astimezone(self._tz).date() + timedelta(days=1)
-        return any(s.start.astimezone(self._tz).date() == tomorrow for s in self._slots)
+        return any(
+            (loc := s.start.astimezone(self._tz)).date() == tomorrow and loc.hour >= PUBLISHED_FROM_HOUR
+            for s in self._slots
+        )
 
     def _weather_due(self, now: datetime) -> bool:
         src = self._src[WEATHER]

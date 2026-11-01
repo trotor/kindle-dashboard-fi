@@ -10,6 +10,14 @@ from zoneinfo import ZoneInfo
 
 PORSSISAHKO_URL = "https://api.porssisahko.net/v2/latest-prices.json"
 SLOT = timedelta(minutes=15)
+# Nord Pool's day is CET, so today's auction already covers tomorrow 00-01
+# Finnish time. Tomorrow counts as published only once its afternoon is known.
+PUBLISHED_FROM_HOUR = 12
+
+
+def day_published(hourly: list[float | None]) -> bool:
+    """True when a day's hourly prices (index = local hour) have been published."""
+    return any(p is not None for p in hourly[PUBLISHED_FROM_HOUR:])
 
 
 @dataclass(frozen=True)

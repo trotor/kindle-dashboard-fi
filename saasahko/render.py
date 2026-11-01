@@ -7,6 +7,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 from saasahko.fmt import MINUS, fmt_header, fmt_price, fmt_temp, fmt_weekday
 from saasahko.icons import draw_icon
+from saasahko.prices import day_published
 from saasahko.state import DashboardState
 from saasahko.symbols import icon_kind, is_night
 
@@ -209,7 +210,7 @@ def _draw_chart(d: ImageDraw.ImageDraw, s: DashboardState) -> None:
         d.line((x_now, y, x_now, min(y + 11, CHART_Y1)), fill=BLACK, width=3)
     d.text((x_now, CHART_Y0 - 6), "nyt", font=_font(28, True), fill=BLACK, anchor="ms")
 
-    if all(p is None for p in s.prices_tomorrow):
+    if not day_published(s.prices_tomorrow):
         cx, cy = (x_day + CHART_X1) / 2, (CHART_Y0 + CHART_Y1) / 2
         d.rectangle((cx - 150, cy - 50, cx + 150, cy + 50), fill=WHITE)  # hide gridlines
         d.text((cx, cy - 6), "huomisen hinnat", font=_font(34), fill=BLACK, anchor="md")

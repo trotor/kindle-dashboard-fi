@@ -7,7 +7,7 @@ from zoneinfo import ZoneInfo
 
 from saasahko.config import Config
 from saasahko.fmt import fmt_clock, fmt_date
-from saasahko.prices import cheapest_hours, hourly_prices, price_at
+from saasahko.prices import cheapest_hours, day_published, hourly_prices, price_at
 from saasahko.store import PRICES, Snapshot
 from saasahko.symbols import describe
 from saasahko.weather import DaySummary, HourForecast, current, daily_summaries, next_hours
@@ -75,7 +75,7 @@ def build_state(snap: Snapshot, cfg: Config, now: datetime, battery: int | None)
 
     if all(p is None for p in prices_today):
         note = "ei hintatietoja"
-    elif _prices_outdated(snap, now, local, all(p is None for p in prices_tomorrow)):
+    elif _prices_outdated(snap, now, local, not day_published(prices_tomorrow)):
         note = _updated("hinnat", snap.prices_fetched_at, tz, today)
     elif snap.weather_fetched_at is None:
         note = "ei säätietoja"

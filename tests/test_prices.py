@@ -106,3 +106,12 @@ def test_cheapest_includes_negative():
 
 def test_cheapest_tie_prefers_earlier():
     assert cheapest_hours([1, 1, 1, 1], n=3) == {0, 1, 2}
+
+
+def test_day_published():
+    from saasahko.prices import day_published
+
+    assert not day_published([None] * 24)
+    assert not day_published([1.0] + [None] * 23)  # only 00-01 from the CET auction
+    assert day_published([1.0] * 24)
+    assert day_published([None] * 12 + [1.0] * 12)
