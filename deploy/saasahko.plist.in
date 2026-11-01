@@ -6,26 +6,26 @@
     <string>fi.ronkko.saasahko</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/opt/homebrew/bin/uv</string>
+        <string>__UV__</string>
         <string>run</string>
         <string>--project</string>
-        <string>/Users/teroronkko/code/kindle</string>
+        <string>__REPO__</string>
         <string>python</string>
         <string>-m</string>
         <string>saasahko</string>
         <string>serve</string>
         <string>--config</string>
-        <string>/Users/teroronkko/code/kindle/config.toml</string>
+        <string>__REPO__/config.toml</string>
     </array>
     <key>WorkingDirectory</key>
-    <string>/Users/teroronkko/code/kindle</string>
+    <string>__REPO__</string>
     <key>RunAtLoad</key>
     <true/>
     <key>KeepAlive</key>
     <true/>
     <key>StandardOutPath</key>
-    <string>/Users/teroronkko/Library/Logs/saasahko.log</string>
+    <string>__LOG__</string>
     <key>StandardErrorPath</key>
-    <string>/Users/teroronkko/Library/Logs/saasahko.log</string>
+    <string>__LOG__</string>
 </dict>
 </plist>

@@ -9,7 +9,11 @@ if [ $# -lt 1 ] || [ -z "$1" ]; then
 fi
 
 WAIT="${KINDLE_SH_WAIT:-3}"
-KINDLE_IP="${KINDLE_IP:-192.168.0.186}"
+KINDLE_IP="${KINDLE_IP:-}"
+if [ -z "$KINDLE_IP" ]; then
+    echo "aseta KINDLE_IP (näkyy Kindlen näytöllä Kehitysyhteyden jälkeen)" >&2
+    exit 2
+fi
 
 if ! nc -z -w 3 "$KINDLE_IP" 23 2>/dev/null; then
     echo "Kindle ei vastaa osoitteessa $KINDLE_IP – tarkista IP Kindlen näytöltä (Kehitysyhteys)" >&2

@@ -3,14 +3,17 @@
 # Author: saasahko
 # DontUseFBInk
 
-# Macin osoite samasta asetuksesta kuin näyttöohjelmalla (URL), varalla oletus
+# Macin osoite samasta asetuksesta kuin näyttöohjelmalla (URL)
 MAC=
 if [ -r /mnt/us/saa-ja-sahko.conf ] && [ -r /mnt/us/saa-ja-sahko/lib.sh ]; then
     . /mnt/us/saa-ja-sahko.conf
     . /mnt/us/saa-ja-sahko/lib.sh
     MAC=$(host_from_url "$URL")
 fi
-MAC=${MAC:-192.168.0.157}
+if [ -z "$MAC" ]; then
+    eips 1 5 "Kehitysyhteys: URL puuttuu saa-ja-sahko.conf:sta"
+    exit 1
+fi
 
 # Salli telnet vain Mac minilta (ei tuplasääntöä, jos skripti ajetaan uudelleen)
 iptables -C INPUT -p tcp --dport 23 -s "$MAC" -j ACCEPT 2>/dev/null ||

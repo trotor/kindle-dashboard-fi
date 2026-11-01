@@ -49,7 +49,14 @@ if [ -f "$SRC/saa-ja-sahko.conf" ]; then
     if [ -e "$VOL/saa-ja-sahko.conf" ]; then
         echo "saa-ja-sahko.conf on jo Kindlellä, ei ylikirjoiteta"
     else
-        cp "$SRC/saa-ja-sahko.conf" "$VOL/saa-ja-sahko.conf"
+        # MAC_IP: Macin osoite kotiverkossa (oletus: en0/en1:n osoite)
+        ip="${MAC_IP:-$(ipconfig getifaddr en0 2>/dev/null || ipconfig getifaddr en1 2>/dev/null || true)}"
+        if [ -z "$ip" ]; then
+            echo "varoitus: Macin IP:tä ei löytynyt, muokkaa URL tiedostoon $VOL/saa-ja-sahko.conf" >&2
+            ip=MAC_IP
+        fi
+        sed "s|MAC_IP|$ip|" "$SRC/saa-ja-sahko.conf" > "$VOL/saa-ja-sahko.conf"
+        echo "kirjoitettu saa-ja-sahko.conf (Mac: $ip)"
     fi
 else
     echo "ohitetaan: kindle/saa-ja-sahko.conf puuttuu"

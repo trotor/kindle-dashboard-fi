@@ -5,3 +5,4 @@ config.toml
 __pycache__/
 *.png
 !tests/golden/*.png
+!docs/images/*.png

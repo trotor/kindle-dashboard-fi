@@ -1,9 +1,11 @@
+# Paikka ja koordinaatit sääennusteelle / place and forecast coordinates
 place_name = "TOIVALA"
 lat = 62.9876
 lon = 27.7216
 port = 8088
-margin_c = 0.0       # Herrfors: 0.23
-transfer_c = 0.0     # siirtomaksu c/kWh sis. alv
+# Lisätään näytettyyn hintaan, c/kWh sis. ALV / added to the displayed price, c/kWh incl. VAT
+margin_c = 0.0       # myyjän marginaali / retailer margin
+transfer_c = 0.0     # siirtomaksu / grid transfer fee
 low_battery_percent = 20
 cache_dir = "cache"
 timezone = "Europe/Helsinki"
