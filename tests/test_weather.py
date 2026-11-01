@@ -18,8 +18,8 @@ NAN_TIME = datetime(2026, 11, 1, 6, 0, tzinfo=UTC)  # Temperature hand-edited to
 T0 = datetime(2026, 11, 1, 0, 0, tzinfo=UTC)
 
 
-def hf(t, temp=1.0, symbol=1):
-    return HourForecast(time=t, temp=temp, symbol=symbol, wind=2.0, feels_like=temp - 2)
+def hf(t, temp=1.0, symbol=1, wind=2.0):
+    return HourForecast(time=t, temp=temp, symbol=symbol, wind=wind, feels_like=temp - 2)
 
 
 H = [hf(T0 + timedelta(hours=i)) for i in range(10)]
@@ -90,3 +90,13 @@ def test_daily_summary_symbol_nearest_noon_and_excludes_today():
     hours.append(hf(datetime(2026, 10, 31, 12, tzinfo=HEL).astimezone(UTC), symbol=99))
     res = daily_summaries(hours, HEL, today=date(2026, 10, 31))
     assert len(res) == 1 and res[0].symbol == 14
+
+
+def test_daily_summary_wind_range():
+    day = date(2026, 11, 1)
+    hours = [
+        hf(datetime(2026, 11, 1, h, tzinfo=HEL).astimezone(UTC), wind=w)
+        for h, w in ((3, 1.4), (12, 8.6), (20, 4.0))
+    ]
+    (d,) = daily_summaries(hours, HEL, today=date(2026, 10, 31))
+    assert d.day == day and d.wind_min == 1.4 and d.wind_max == 8.6

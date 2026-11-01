@@ -37,9 +37,9 @@ def sample_state(**overrides) -> DashboardState:
         current_desc="pilvistä",
         next_hours=[_hour(k, t, s) for k, t, s in _NEXT],
         days=[
-            DaySummary(day=date(2026, 11, 1), tmin=0.0, tmax=5.0, symbol=31),
-            DaySummary(day=date(2026, 11, 2), tmin=-4.0, tmax=3.0, symbol=1),
-            DaySummary(day=date(2026, 11, 3), tmin=-6.0, tmax=1.0, symbol=51),
+            DaySummary(day=date(2026, 11, 1), tmin=0.0, tmax=5.0, symbol=31, wind_min=2.0, wind_max=6.0),
+            DaySummary(day=date(2026, 11, 2), tmin=-4.0, tmax=3.0, symbol=1, wind_min=1.0, wind_max=4.0),
+            DaySummary(day=date(2026, 11, 3), tmin=-6.0, tmax=1.0, symbol=51, wind_min=3.0, wind_max=11.0),
         ],
         prices_today=list(PRICES_TODAY),
         prices_tomorrow=list(PRICES_TOMORROW),

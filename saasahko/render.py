@@ -5,7 +5,7 @@ from functools import lru_cache
 
 from PIL import Image, ImageDraw, ImageFont
 
-from saasahko.fmt import MINUS, fmt_header, fmt_price, fmt_temp, fmt_weekday
+from saasahko.fmt import MINUS, fmt_header, fmt_price, fmt_temp, fmt_weekday, fmt_wind
 from saasahko.icons import draw_icon
 from saasahko.prices import day_published
 from saasahko.state import DashboardState
@@ -123,7 +123,7 @@ def _draw_current(d: ImageDraw.ImageDraw, s: DashboardState) -> None:
     d.text((M + 270, 318), fmt_temp(cur.temp), font=_font(200, True), fill=BLACK, anchor="ls")
 
     parts = [s.current_desc] if s.current_desc else []
-    parts += [f"tuntuu kuin {fmt_temp(cur.feels_like)}", f"tuuli {math.floor(cur.wind + 0.5)} m/s"]
+    parts += [f"tuntuu kuin {fmt_temp(cur.feels_like)}", f"tuuli {fmt_wind(cur.wind)}"]
     line = " · ".join(parts)
     line = line[:1].upper() + line[1:]
     for size in (38, 34, 30, 26):
@@ -138,12 +138,13 @@ def _draw_hours(d: ImageDraw.ImageDraw, s: DashboardState) -> None:
         local = h.time.astimezone(s.now_local.tzinfo)
         cx = round(M + cw * (k + 0.5))
         d.text((cx, 425), f"{local.hour:02d}", font=_font(34), fill=BLACK, anchor="ma")
-        draw_icon(d, icon_kind(h.symbol, is_night(local)), (cx - 40, 468, cx + 40, 548))
-        d.text((cx, 558), fmt_temp(h.temp), font=_font(46, True), fill=BLACK, anchor="ma")
+        draw_icon(d, icon_kind(h.symbol, is_night(local)), (cx - 36, 464, cx + 36, 536))
+        d.text((cx, 542), fmt_temp(h.temp), font=_font(46, True), fill=BLACK, anchor="ma")
+        d.text((cx, 598), fmt_wind(h.wind), font=_font(28), fill=BLACK, anchor="ma")
 
 
 def _draw_days(d: ImageDraw.ImageDraw, s: DashboardState) -> None:
-    d.rectangle((M, 624, W - M, 625), fill=0x88)
+    d.rectangle((M, 640, W - M, 641), fill=0x88)
     cw = (W - 2 * M) / 3
     mid = 684
     for k, day in enumerate(s.days[:3]):
@@ -158,6 +159,8 @@ def _draw_days(d: ImageDraw.ImageDraw, s: DashboardState) -> None:
         draw_icon(d, icon_kind(day.symbol, False), (round(x), mid - 30, round(x) + 60, mid + 30))
         x += 60 + gap
         d.text((x, mid), temps, font=_font(38), fill=BLACK, anchor="lm")
+        d.text((M + cw * (k + 0.5), 730), f"tuuli {fmt_wind(day.wind_min, day.wind_max)}",
+               font=_font(28), fill=BLACK, anchor="mm")
 
 
 def _draw_price_header(d: ImageDraw.ImageDraw, s: DashboardState) -> None:

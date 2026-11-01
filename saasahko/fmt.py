@@ -20,6 +20,13 @@ def fmt_temp(t: float) -> str:
     return f"+{n}°" if n > 0 else f"{MINUS}{-n}°"
 
 
+def fmt_wind(lo: float, hi: float | None = None) -> str:
+    """Tuuli kokonaisina m/s: "4 m/s" tai vaihteluväli "2–8 m/s"."""
+    a = _round_half_away(lo)
+    b = a if hi is None else _round_half_away(hi)
+    return f"{a} m/s" if a == b else f"{a}–{b} m/s"
+
+
 def fmt_price(c: float) -> str:
     n = _round_half_away(c, 1)
     whole, frac = divmod(abs(n), 10)

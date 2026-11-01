@@ -170,3 +170,28 @@ def test_tomorrow_text_shown_when_only_first_hour_known():
     none = render(sample_state(prices_tomorrow=[None] * 24, cheapest_tomorrow=set()))
     first = render(sample_state(prices_tomorrow=only_first, cheapest_tomorrow=set()))
     assert first.crop(text_box).tobytes() == none.crop(text_box).tobytes()
+
+
+def _hour_wind_box(k: int) -> tuple[int, int, int, int]:
+    cw = (1072 - 2 * 40) / 6
+    cx = round(40 + cw * (k + 0.5))
+    return (cx - 70, 600, cx + 70, 632)
+
+
+def test_hour_wind_drawn_under_temperature():
+    state = sample_state()
+    calm = [replace(h, wind=0.0) for h in state.next_hours]
+    windy = [replace(h, wind=12.0) for h in state.next_hours]
+    a = render(replace(state, next_hours=calm)).crop(_hour_wind_box(0))
+    b = render(replace(state, next_hours=windy)).crop(_hour_wind_box(0))
+    assert a.tobytes() != b.tobytes()
+
+
+def test_day_wind_drawn():
+    state = sample_state()
+    box = (40, 708, 1072 - 40, 748)
+    calm = [replace(d, wind_min=0.0, wind_max=1.0) for d in state.days]
+    windy = [replace(d, wind_min=8.0, wind_max=15.0) for d in state.days]
+    a = render(replace(state, days=calm)).crop(box)
+    b = render(replace(state, days=windy)).crop(box)
+    assert a.tobytes() != b.tobytes()

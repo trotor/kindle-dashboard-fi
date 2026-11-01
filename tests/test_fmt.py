@@ -3,7 +3,7 @@ from zoneinfo import ZoneInfo
 
 import pytest
 
-from saasahko.fmt import fmt_clock, fmt_date, fmt_header, fmt_price, fmt_temp, fmt_weekday
+from saasahko.fmt import fmt_clock, fmt_date, fmt_header, fmt_price, fmt_temp, fmt_weekday, fmt_wind
 
 
 @pytest.mark.parametrize("t,s", [(4.2,"+4°"), (-6.4,"−6°"), (-0.3,"0°"), (0.4,"0°"), (12.5,"+13°"), (-2.5,"−3°")])
@@ -23,3 +23,10 @@ def test_fmt_header():
 def test_date():
     assert fmt_date(date(2026, 10, 31)) == "31.10."
     assert fmt_date(date(2026, 1, 5)) == "5.1."
+
+
+def test_fmt_wind():
+    assert fmt_wind(3.4) == "3 m/s"
+    assert fmt_wind(2.5) == "3 m/s"
+    assert fmt_wind(1.6, 8.4) == "2–8 m/s"
+    assert fmt_wind(4.2, 3.8) == "4 m/s"

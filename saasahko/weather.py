@@ -26,6 +26,8 @@ class DaySummary:
     tmin: float
     tmax: float
     symbol: int
+    wind_min: float
+    wind_max: float
 
 
 def _iso_z(t: datetime) -> str:
@@ -103,6 +105,8 @@ def daily_summaries(hours: list[HourForecast], tz: ZoneInfo, today: date, n: int
                 tmin=min(h.temp for h in day_hours),
                 tmax=max(h.temp for h in day_hours),
                 symbol=rep.symbol,
+                wind_min=min(h.wind for h in day_hours),
+                wind_max=max(h.wind for h in day_hours),
             )
         )
     return out
