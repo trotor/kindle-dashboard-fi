@@ -266,3 +266,14 @@ def test_summary_shows_tomorrow_when_published():
 def test_summary_when_no_tomorrow_uses_today():
     img = render(sample_state(prices_tomorrow=[None] * 24, cheapest_tomorrow=set()))
     assert set(img.crop((40, 828, 420, 904)).tobytes()) != {255}
+
+
+def test_run_labels_shorten_to_fit_and_never_overlap():
+    from saasahko.render import _font, _run_labels
+    d = ImageDraw.Draw(Image.new("L", (1072, 1448)))
+    f = _font(28, True)
+    assert [t for _, t in _run_labels(d, [(31, 45)], 15.0)] == ["klo 07–21 yli 15 c"]
+    two = _run_labels(d, [(31, 34), (40, 44)], 15.0)
+    assert [t for _, t in two] == ["07–10", "16–20"]
+    (l0, r0), (l1, r1) = [(cx - d.textlength(t, font=f) / 2, cx + d.textlength(t, font=f) / 2) for cx, t in two]
+    assert r0 < l1

@@ -6,7 +6,7 @@
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 ![Server: macOS](https://img.shields.io/badge/server-macOS-lightgrey?logo=apple)
 ![Display: Kindle Paperwhite 3](https://img.shields.io/badge/display-Kindle%20Paperwhite%203-555)
-![Tests: 177](https://img.shields.io/badge/tests-177%20passing-brightgreen)
+![Tests: 193](https://img.shields.io/badge/tests-193%20passing-brightgreen)
 
 **Put the old Kindle from your drawer on the wall or a shelf and let it show the weather and Finnish spot electricity prices.**
 One glance tells you how cold it is outside and when to run the washing machine, heat the sauna or charge the car.
@@ -18,9 +18,11 @@ One glance tells you how cold it is outside and when to run the washing machine,
 ## What it shows
 
 - **Current weather:** a big temperature, a weather symbol, feels-like temperature and wind.
-- **The next 6 hours** and a **3-day forecast** (high and low).
+- **The next 6 hours** and a **3-day forecast** (high and low), both with wind (m/s).
 - **Spot electricity price today and tomorrow**, hour by hour (c/kWh, Finnish VAT 25.5 % included):
   - a "now" line and the current price in large type
+  - a **price limit** (default 15 c, roughly a fixed-price contract): a dashed line, the part of every upcoming bar above it hatched, and the expensive stretches labelled with their hours ("07–21 yli 15 c") and peak price
+  - a summary on the left: tomorrow's average, highest and lowest price once published, today's before that
   - each day's **3 cheapest hours in black**. For today they are picked from the hours that are still ahead, so a cheap hour that has already passed is never suggested.
   - past hours in light grey, negative prices below the zero line
   - tomorrow's prices appear once they are published (around 14:00 Finnish time). Before that the chart says "huomisen hinnat n. klo 14" ("tomorrow's prices around 14:00").
@@ -144,7 +146,7 @@ This is an **unencrypted root shell**, restricted to the Mac's address. It close
 ## Development
 
 ```sh
-uv run pytest                              # 177 tests
+uv run pytest                              # 193 tests
 uv run python scripts/make_screenshots.py  # README images from sample data
 ```
 

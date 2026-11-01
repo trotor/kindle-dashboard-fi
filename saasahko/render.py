@@ -294,32 +294,60 @@ def _draw_chart(img: Image.Image, d: ImageDraw.ImageDraw, s: DashboardState) -> 
         d.text((_hour_x(6 * k), 1380), label, font=_font(28), fill=BLACK, anchor=anchor)
 
 
-BRACKET_Y = CHART_Y0 + 4
+LABEL_Y = CHART_Y0 + 18
+BRACKET_Y = CHART_Y0 + 38
+LABEL_GAP = 16
+
+
+def _run_labels(d, runs, limit: float) -> list[tuple[float, str]]:
+    """(center x, text) per run: the longest wording that fits every run without overlaps."""
+    f = _font(28, True)
+
+    def spans(a: int, b: int) -> str:
+        return f"{a % 24:02d}–{b if b <= 24 else b - 24:02d}"
+
+    variants = (
+        lambda a, b: f"klo {spans(a, b)} yli {_num(limit)} c",
+        lambda a, b: f"{spans(a, b)} yli {_num(limit)} c",
+        lambda a, b: spans(a, b),
+    )
+    for make in variants:
+        placed, right, ok = [], CHART_X0 - LABEL_GAP, True
+        for a, b in runs:
+            text = make(a, b)
+            w = d.textlength(text, font=f)
+            cx = (_hour_x(a) + _hour_x(b)) / 2
+            cx = min(max(cx, CHART_X0 + w / 2), CHART_X1 - w / 2)
+            if cx - w / 2 < right + LABEL_GAP:
+                ok = False
+                if make is not variants[-1]:
+                    break
+                continue  # last resort: skip this label
+            placed.append((cx, text))
+            right = cx + w / 2
+        if ok or make is variants[-1]:
+            return placed
+    return []
 
 
 def _draw_runs(d, s: DashboardState, prices, runs, top: int, bottom: int) -> None:
-    """Bracket and label over each expensive run, and the peak value above its bar."""
-    f = _font(28, True)
+    """Bracket under a label for each expensive run, and the peak value above its bar."""
     for a, b in runs:
         xa, xb = _hour_x(a), _hour_x(b) - BAR_GAP
-        d.line((xa, BRACKET_Y + 16, xa, BRACKET_Y), fill=BLACK, width=3)
+        d.line((xa, BRACKET_Y + 14, xa, BRACKET_Y), fill=BLACK, width=3)
         d.line((xa, BRACKET_Y, xb, BRACKET_Y), fill=BLACK, width=3)
-        d.line((xb, BRACKET_Y, xb, BRACKET_Y + 16), fill=BLACK, width=3)
-        ha, hb = a % 24, b if b <= 24 else b - 24
-        span = f"{ha:02d}–{hb:02d}"
-        for text in (f"klo {span} yli {_num(s.price_limit)} c", f"{span} yli {_num(s.price_limit)} c", span):
-            w = d.textlength(text, font=f)
-            if w + 2 * 24 <= xb - xa:
-                cx = (xa + xb) / 2
-                d.rectangle((cx - w / 2 - 8, BRACKET_Y - 18, cx + w / 2 + 8, BRACKET_Y + 18), fill=WHITE)
-                d.text((cx, BRACKET_Y), text, font=f, fill=BLACK, anchor="mm")
-                break
+        d.line((xb, BRACKET_Y, xb, BRACKET_Y + 14), fill=BLACK, width=3)
+    f = _font(28, True)
+    for cx, text in _run_labels(d, runs, s.price_limit):
+        w = d.textlength(text, font=f)
+        d.rectangle((cx - w / 2 - 6, LABEL_Y - 16, cx + w / 2 + 6, LABEL_Y + 16), fill=WHITE)
+        d.text((cx, LABEL_Y), text, font=f, fill=BLACK, anchor="mm")
 
     if runs:
         k = max((i for a, b in runs for i in range(a, b)), key=lambda i: prices[i])
         pk = prices[k]
         y = value_y(pk, top, bottom) - 6
-        if y - 26 > BRACKET_Y + 20:
+        if y - 26 > BRACKET_Y + 16:
             x0, x1 = bar_x(k)
             d.text(((x0 + x1) / 2, y), str(math.floor(pk + 0.5)), font=_font(26, True), fill=BLACK, anchor="ms")
 

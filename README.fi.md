@@ -6,7 +6,7 @@
 ![Lisenssi: MIT](https://img.shields.io/badge/lisenssi-MIT-green)
 ![Palvelin: macOS](https://img.shields.io/badge/palvelin-macOS-lightgrey?logo=apple)
 ![Näyttö: Kindle Paperwhite 3](https://img.shields.io/badge/n%C3%A4ytt%C3%B6-Kindle%20Paperwhite%203-555)
-![Testit: 177](https://img.shields.io/badge/testit-177%20ok-brightgreen)
+![Testit: 193](https://img.shields.io/badge/testit-193%20ok-brightgreen)
 
 **Laatikossa lojuva Kindle seinälle tai pöydälle näyttämään sään ja pörssisähkön hinnan.**
 Näytöltä näkee yhdellä silmäyksellä, onko ulkona pakkasta ja mihin kellonaikaan pyykinpesu, saunan lämmitys tai auton lataus kannattaa ajoittaa.
@@ -18,9 +18,11 @@ Näytöltä näkee yhdellä silmäyksellä, onko ulkona pakkasta ja mihin kellon
 ## Mitä näytöllä on
 
 - **Sää nyt:** lämpötila isolla, sääsymboli, tuntuu kuin -lämpötila ja tuuli.
-- **Seuraavat 6 tuntia** ja **kolmen päivän ennuste** (ylin ja alin lämpötila).
+- **Seuraavat 6 tuntia** ja **kolmen päivän ennuste** (ylin ja alin lämpötila), molemmissa tuuli (m/s).
 - **Sähkön pörssihinta tänään ja huomenna** tunneittain (c/kWh, sis. ALV 25,5 %):
   - "nyt"-viiva ja tämän hetken hinta isolla
+  - **kipuraja** (oletus 15 c, suunnilleen kiinteän sopimuksen hinta): katkoviiva, tulevien tuntien rajan ylittävä osa viivoitettuna ja kalliit jaksot kellonaikoineen ("07–21 yli 15 c") sekä huippuhinta
+  - yhteenveto vasemmalla: huomisen keskihinta, kallein ja halvin tunti, kun hinnat on julkaistu, sitä ennen tämän päivän
   - päivän **3 halvinta tuntia mustalla**. Tänään halvimmat valitaan vain jäljellä olevista tunneista, eli mennyttä halpaa tuntia ei enää tarjota.
   - menneet tunnit vaaleina, negatiiviset hinnat nollaviivan alla
   - huomisen hinnat ilmestyvät, kun ne julkaistaan (noin klo 14). Sitä ennen näytöllä lukee "huomisen hinnat n. klo 14".
@@ -142,7 +144,7 @@ Yhteys on **salaamaton root-yhteys**, ja se on rajattu vain Macin osoitteeseen. 
 ## Kehitys
 
 ```sh
-uv run pytest                            # 177 testiä
+uv run pytest                            # 193 testiä
 uv run python scripts/make_screenshots.py  # README:n kuvat esimerkkidatasta
 ```
 

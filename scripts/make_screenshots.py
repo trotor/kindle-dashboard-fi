@@ -14,8 +14,21 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
+from saasahko.prices import cheapest_hours  # noqa: E402
 from saasahko.render import render  # noqa: E402
 from tests.sample_state import sample_state  # noqa: E402
+
+# Kylmä arkipäivä: aamu- ja iltapiikki yli kipurajan / a cold weekday with two peaks over the limit
+TOMORROW = [
+    1.8, 1.5, 1.3, -1.2, 1.2, 1.4, 6.9, 18.4, 26.3, 21.7, 12.8, 9.2,
+    8.1, 7.6, 9.4, 13.8, 22.1, 31.5, 34.2, 24.0, 11.1, 6.8, 4.6, 3.2,
+]
+
+
+def demo(**kw):
+    return sample_state(
+        prices_tomorrow=list(TOMORROW), cheapest_tomorrow=cheapest_hours(TOMORROW), price_limit=15.0, **kw
+    )
 
 OUT = ROOT / "docs" / "images"
 FONTS = "/System/Library/Fonts/Supplemental/"
@@ -93,10 +106,10 @@ def social(dev: Image.Image) -> Image.Image:
 
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    screen = render(sample_state())
+    screen = render(demo())
     screen.save(OUT / "dashboard.png", optimize=True)
     error_banner(screen, "yhteysvirhe 03.15").save(OUT / "dashboard-error.png", optimize=True)
-    low = render(sample_state(battery=15, low_battery=True))
+    low = render(demo(battery=15, low_battery=True))
     low.save(OUT / "dashboard-low-battery.png", optimize=True)
     dev = device(screen, 900)
     dev.save(OUT / "kindle.png", optimize=True)
