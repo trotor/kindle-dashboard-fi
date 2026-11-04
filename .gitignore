@@ -6,3 +6,4 @@ __pycache__/
 *.png
 !tests/golden/*.png
 !docs/images/*.png
+CLAUDE.local.md
